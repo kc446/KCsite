@@ -1,0 +1,44 @@
+/* * {
+    background-color: lightcyan;
+}*/
+
+/* for the heading */
+header h1 {
+    color: greenyellow;
+}
+
+#subtitle {
+    color: lightgreen;
+}
+
+/* for the body */
+body {
+    background-color: darkslategray;
+    border: 3px dotted lawngreen;
+}
+
+body p {
+    color: honeydew;
+}
+
+.nav-link {
+    color: lightgreen;
+}
+
+.nav-link:hover {
+    color: aquamarine;
+}
+
+.accent {
+    color: lime;
+}
+
+.current {
+    color: greenyellow
+}
+
+/* for the footer */
+footer {
+    background-color: limegreen;
+    color:white;
+}

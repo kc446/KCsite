@@ -1,0 +1,25 @@
+/* * {background-color: lightcyan;} */
+
+/* for the heading */
+header h1 {color: lightcoral;}
+#subtitle {color: indianred;}
+
+/* for the body */
+body {
+    background-color: mistyrose;
+    border: 3px dotted lightcoral;
+}
+
+body p {color: indianred;}
+
+.nav-link {color: crimson;}
+.nav-link:hover {color: lightcoral;}
+
+.accent {color: hotpink;}
+.current {color: lightpink;}
+
+/* for the footer */
+footer {
+    background-color: crimson;
+    color:white;
+}
