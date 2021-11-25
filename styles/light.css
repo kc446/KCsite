@@ -1,22 +1,46 @@
-/* * {background-color: lightcyan;} */
+/** {background-color: white;}*/
 
-/* for the heading */
+/* for the header */
 header h1 {color: lightcoral;}
 #subtitle {color: indianred;}
+
+/* for the navbar */
+.navbar-nav {border:1px solid crimson;}
+.navbar .nav-item {
+    background: linear-gradient(180deg, white, mistyrose);
+    border:1px solid lightcoral;
+}
+
+.nav-link, .dropdown-item {color: crimson;}
+.nav-link:hover {color: lightcoral;}
+
+.dropdown-menu {
+    background-color: floralwhite;
+    border: 1px solid indianred;
+}
+
+.dropdown-item:hover {
+    color: indianred;
+    background-color: mistyrose;
+}
+
+.accent {color: hotpink;}
+.current {color: lightpink;}
 
 /* for the body */
 body {
     background-color: mistyrose;
     border: 3px dotted lightcoral;
 }
-
 body p {color: indianred;}
 
-.nav-link {color: crimson;}
-.nav-link:hover {color: lightcoral;}
+/*for the carousel*/
+#featured {border:3px indianred;}
 
-.accent {color: hotpink;}
-.current {color: lightpink;}
+/*for the section*/
+section {color: floralwhite;}
+section h2 {color: palevioletred;}
+section img {border:3px dotted crimson; background-color:floralwhite;}
 
 /* for the footer */
 footer {

@@ -1,44 +1,49 @@
-/* * {
-    background-color: lightcyan;
-}*/
+/** {background-color: black;} */
 
-/* for the heading */
-header h1 {
-    color: greenyellow;
+/* for the header */
+header h1 {color: greenyellow;}
+#subtitle {color: lightgreen;}
+
+/* for the navbar */
+.navbar .navbar-nav {border:1px solid black;}
+.navbar .nav-item {
+    background: linear-gradient(180deg, darkslategray, forestgreen);
+    border:1px solid greenyellow;
 }
 
-#subtitle {
-    color: lightgreen;
+.nav-link, .dropdown-item {color: lightgreen;}
+.nav-link:hover {color: aquamarine;}
+
+.dropdown-menu {
+    background-color: darkslategray;
+    border:1px solid greenyellow;
 }
+
+.dropdown-item:hover {
+    color: aquamarine;
+    background-color: darkgreen;
+}
+
+.accent {color: lime;}
+.current {color: greenyellow}
 
 /* for the body */
 body {
     background-color: darkslategray;
     border: 3px dotted lawngreen;
 }
+body p {color: honeydew;}
 
-body p {
-    color: honeydew;
-}
+/*for the carousel*/
+#featured {border:3px lawngreen;}
 
-.nav-link {
-    color: lightgreen;
-}
-
-.nav-link:hover {
-    color: aquamarine;
-}
-
-.accent {
-    color: lime;
-}
-
-.current {
-    color: greenyellow
-}
+/*for the section*/
+article {background-color: forestgreen;}
+section h2 {color: limegreen;}
+section img {border:3px dotted lawngreen;}
 
 /* for the footer */
 footer {
     background-color: limegreen;
-    color:white;
+    color: darkslategray;
 }

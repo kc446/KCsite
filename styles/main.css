@@ -1,54 +1,202 @@
 * {
     /*background-color: lightcyan;*/
-    font-family: "", sans-serif;
-    margin:1em;
+    font-family: "Arial", sans-serif;
+    margin:0;
     padding:0;
 }
 
-/*for the header*/
+/*media queries*/
+@media only screen and (max-width:767px) { /*landscape view*/
+    * {font-size:90%;}
 
-header {
-    text-align: center;
+    #mobile {
+        display:block;
+        overflow: hidden;
+        position:fixed;
+        bottom:0;
+        width:100%;
+    }
+    #desktop {display:none;}
+    header h1 {font-size:50%;}
+    header #subtitle {
+        font-size:99%;
+        margin:auto;
+        padding: 0.5em 0;
+        font-weight: bold;
+    }
+    .switch {margin-bottom: 1em;}
 }
+
+@media only screen and (max-width:480px) { /*portrait view*/
+    header #subtitle {
+        font-size:99%;
+        margin:auto;
+        padding: 1em 0;
+        font-weight: bold;
+    }
+
+    #mobile {
+        overflow: hidden;
+        position:fixed;
+        bottom:0;
+        width:100%;
+    }
+}
+
+/*for the header*/
+header {text-align: center;}
 header h1 {
     font-size: 5em;
     font-family: "Magnolia Script", sans-serif;
 }
-
 #subtitle {
     font-style: italic;
     font-size: 2.5em;
     padding-bottom: 0.25em;
 }
 
-/*for the body*/
+/*for the navbar*/
+#desktop {display:block;}
+#mobile {display:none;}
 
-body {
-    margin: 0.5em;
-    padding: 2em;
+#logo {
+    float:left;
+    padding-left:0.5em;
 }
 
-body p {
-    font-size: 1.25em;
-}
-
-footer {
+nav {
+    position:relative;
+    text-align:center;
     margin: auto;
-    padding: 1em;
+    padding: 0;
+    width:100%
+}
+
+nav .navbar .nav {
+    float:left;
+    display:flex;
+    flex-direction:row;
+    width:25%;
+    padding:0;
+    margin:auto;
+}
+
+.navbar-nav {
+    margin:0;
+    clear:left;
+    float:none;
+    position:relative;
+    text-align:center;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+
+.nav-link {
+    padding-top:1em;
+}
+
+nav.navbar ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+nav.navbar li {
+    float:left;
+    margin:0;
+    width:inherit;
+}
+nav.navbar ul li a{
+    display:block;
+    text-align:center;
+    padding: 0.25em 0 0.25em 0;
+    text-decoration:none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: center;
+    text-align:center;
+    padding:0;
+    margin:auto;
+    float: none;
+}
+
+.navbar li:hover .dropdown-menu {
+    display: flex;
+    margin: auto;
+    position: absolute;
+    flex-direction:column;
+}
+
+.dropdown-item {
+    margin: auto;
+    position:center;
     text-align:center;
 }
 
-footer p {
-    margin-top: 0.5em;
-    font-size: 1em;
+/*for the body*/
+body {
+    margin: 0.75em auto 1em auto;
+    padding: 1em;
+    width:95%;
+}
+
+/*for the carousel*/
+#featured {
+    margin:0;
+    padding:0;
+    display:inline-block;
+    position:relative;
+    width:98%;
+}
+
+/*for the section below the carousel*/
+section {
+    width: 95%;
+    margin:auto;
+}
+section img {
+    float:right;
+    width:33.33%;
+    max-width:75%;
+}
+
+article {
+    float:left;
+    display:inline-block;
+    margin:auto;
+    max-width:50%
+}
+article h2 {
+    font-family: "Magnolia Script",Arial,sans-serif;
+    margin:auto;
+    padding: 0.25em;
+    font-size:2.5em;
+}
+article p {
+    margin-left: 1em;
+    padding: 0;
+}
+
+/*for the footer*/
+footer {
+    margin: 0.5em auto 0.25em auto;
+    padding: 1em;
+    text-align:center;
+    font-size:1em;
+    display:inline-block;
+    position:center;
+    width:100%;
 }
 
 /* for the theme toggle */
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 56px;
+    height: 28px;
     padding-bottom: 1em;
 }
 .switch input {
@@ -73,8 +221,8 @@ footer p {
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
-    bottom: 4px;
+    left: 2px;
+    bottom:1px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
