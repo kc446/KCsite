@@ -150,6 +150,7 @@ body {
     display:inline-block;
     position:relative;
     width:98%;
+    alignment: center;
 }
 
 /*for the section below the carousel*/
@@ -192,14 +193,14 @@ footer {
 }
 
 /* for the theme toggle */
-.switch {
+#switch {
     position: relative;
     display: inline-block;
     width: 56px;
     height: 28px;
     padding-bottom: 1em;
 }
-.switch input {
+#switch input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -228,12 +229,17 @@ footer {
     transition: .4s;
     border-radius: 50%;
 }
+
+#switch::before {background-color: lightpink;}
+
+#switch::after {background-color: lightgreen;}
+
 input:checked + .slider {
     background-color: lightgreen;
 }
-input:focus + .slider {
+/*input:focus + .slider {
     box-shadow: 0 0 1px lightgreen;
-}
+}*/
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);

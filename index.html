@@ -2,36 +2,65 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <link id="favicon" rel="icon" href="img/lotus.png">
+    <link id="favicon" class="logo" rel="icon" href="img/lotus.png"> <!-- lotus by default-->
     <link rel="stylesheet" href="styles/main.css"> <!--for the whole site-->
     <link id="theme" rel="stylesheet" href="styles/light.css"> <!--theme -- light by default-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Kolleen Caffyn.</title>
 
-    <script> <!--light/dark mode toggle script -- credit goes to geeksforgeeks.org-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        $(function(){
+            //basic jquery syntax: $([selector]).[action]()
+            $('#switch').click(function(){
+                $('#theme').attr("href",'styles/dark.css').attr("href",'styles/light.css');
+            })
+        });
+    </script>-->
+
+    <script type="text/javascript"> // light/dark mode toggle script, a.k.a. eternal suffering
+
     function toggleTheme() {
-        // Obtains an array of all <link> elements.
-        // Select your element using indexing.
-        const theme = document.getElementById('theme')//document.getElementsByTagName('link')[0];
-        const favicon = document.getElementById('favicon'); //yes, this changes with the theme too
+        //initializing variables for the sake of keeping things relatively neat
+        const theme = document.getElementById('theme');
+        const light= 'styles/light.css';
+        const dark = 'styles/dark.css';
+
+        const favicon = document.getElementById('favicon');
         const logo = document.getElementById('logo');
 
-        // Change the value of href attribute to change the css sheet.
-        if (theme.getAttribute('href') === 'styles/light.css') {
-            theme.setAttribute('href', 'styles/dark.css');
-            favicon.setAttribute('href','img/glowshroom.png');
-            logo.setAttribute('src','img/glowshroom.png')}
+        const lotus = 'img/lotus.png';
+        const glowshroom = 'img/glowshroom.png';
+
+        let check=document.getElementById('status').checked;
+
+        //localStorage.getItem('theme');
+        //localStorage.getItem('favicon');
+        //localStorage.getItem('logo');
+
+        //let style=theme.getAttribute('href');
+
+        if (check===true){ //(theme && style === light){ //(style===light){
+            theme.href=dark; //theme.setAttribute('href', dark);
+            favicon.href=glowshroom;
+            logo.src=glowshroom;
+            //localStorage.setItem('theme', dark);
+            //localStorage.setItem('favicon',glowshroom);
+            //localStorage.setItem('logo',glowshroom)
+        }
 
         else {
-            theme.setAttribute('href', 'styles/light.css');
-            favicon.setAttribute('href','img/lotus.png');
-            logo.setAttribute('src','img/lotus.png')}
+            theme.href=light;
+            favicon.href=lotus;
+            logo.src=lotus;
+            //localStorage.setItem('theme',light);
+            //localStorage.setItem('favicon',lotus);
+            //localStorage.setItem('logo',lotus)
+        }
+        //document.getElementById("theme").textContent = localStorage.getItem("theme");
     }
     </script>
 </head>
@@ -41,8 +70,8 @@
 <header>
     <h1>Kolleen Caffyn.</h1>
     <h2 id="subtitle">Graphic Designer, Digital Artist...working subtitle.</h2>
-    <label class="switch">
-        <input type="checkbox" onclick="toggleTheme()">
+    <label id="switch">
+        <input type="checkbox" id="status" onclick="toggleTheme()">
         <span class="slider"></span>
     </label>
 
@@ -73,9 +102,8 @@
     <nav class="navbar" id="desktop">
         <div class="container-fluid">
             <ul class="navbar-nav">
-
                 <li class="nav-item">
-                    <img src="img/lotus.png" alt="Logo" style="width:40px;" id="logo">
+                    <img src="img/lotus.png" alt="Logo" style="max-width: 40px;" id="logo">
                     <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -134,9 +162,9 @@
 
     <article>
         <h2>ABOUT</h2>
-        <p>yea i'm an artist what up</p>
-        <p>there will be real words here about myself but right now this is just for testing while i fix up the stylesheets and whatnot<br>
-        thank you for at least taking a sneaky-peeky at this work-in-progress though i really appreciate it</p>
+        <p>I am a graphic designer currently pursuing a Communication major at New Jersey Institute of Technology. I draw, I code, I edit, etc., etc...I pretty much made this entire page myself.</p>
+        <p>there will be MORE real words here about myself but right now this is just for testing while i figure out why the hell the theme toggle doesn't stay properly<br>
+        but thank you for at least taking a sneaky-peeky at this work-in-progress though i really appreciate it</p>
     </article>
 </section>
 </body>

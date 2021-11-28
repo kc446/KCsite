@@ -11,6 +11,8 @@ header h1 {color: lightcoral;}
     border:1px solid lightcoral;
 }
 
+#logo {width: 40px;}
+
 .nav-link, .dropdown-item {color: crimson;}
 .nav-link:hover {color: lightcoral;}
 

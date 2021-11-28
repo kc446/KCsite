@@ -5,18 +5,20 @@ header h1 {color: greenyellow;}
 #subtitle {color: lightgreen;}
 
 /* for the navbar */
-.navbar .navbar-nav {border:1px solid black;}
+.navbar-nav {border:1px solid black;}
 .navbar .nav-item {
-    background: linear-gradient(180deg, darkslategray, forestgreen);
+    background: linear-gradient(180deg, forestgreen, darkslategray);
     border:1px solid greenyellow;
 }
+
+#logo {width: 39px;}
 
 .nav-link, .dropdown-item {color: lightgreen;}
 .nav-link:hover {color: aquamarine;}
 
 .dropdown-menu {
     background-color: darkslategray;
-    border:1px solid greenyellow;
+    border: 1px solid greenyellow;
 }
 
 .dropdown-item:hover {
@@ -38,9 +40,9 @@ body p {color: honeydew;}
 #featured {border:3px lawngreen;}
 
 /*for the section*/
-article {background-color: forestgreen;}
+article {color: forestgreen;}
 section h2 {color: limegreen;}
-section img {border:3px dotted lawngreen;}
+section img {border:3px dotted lawngreen; background-color: darkgreen;}
 
 /* for the footer */
 footer {
