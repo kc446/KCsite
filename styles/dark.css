@@ -1,20 +1,41 @@
-/** {background-color: black;} */
+html {background-color: darkslategray;}
+
+/* palette:
+
+main 1: #74969a / darkslategray
+main 2 (shade): #405f6f
+main 3 (darkest): #364556
+
+accent 1: #aee19d
+accent 2 (hili): #eafacb
+accent 3 (lightest): #fcffe8
+
+the mystery color that may or may not get used: #dcff62
+
+*/
 
 /* for the header */
 header h1 {color: greenyellow;}
-#subtitle {color: lightgreen;}
+#subtitle {
+    color: lightgreen;
+    border-bottom: 1px #aee19d solid;
+}
 
 /* for the navbar */
-.navbar-nav {border:1px solid black;}
+.navbar-nav {border:1px solid #364556;}
 .navbar .nav-item {
-    background: linear-gradient(180deg, forestgreen, darkslategray);
-    border:1px solid greenyellow;
+    background: linear-gradient(180deg, #405f6f, darkslategray);
+    border:2px solid #364556;
+    border-bottom:2px solid greenyellow;
 }
 
 #logo {width: 39px;}
 
-.nav-link, .dropdown-item {color: lightgreen;}
-.nav-link:hover {color: aquamarine;}
+.nav-link, .dropdown-item {color: #fcffe8;}
+.nav-link:hover {color: greenyellow;}
+
+#current {border-bottom: 2px solid #eafacb !important;}
+#current a {color: #aee19d;}
 
 .dropdown-menu {
     background-color: darkslategray;
@@ -22,30 +43,42 @@ header h1 {color: greenyellow;}
 }
 
 .dropdown-item:hover {
-    color: aquamarine;
+    color: greenyellow;
     background-color: darkgreen;
 }
 
-.accent {color: lime;}
-.current {color: greenyellow}
+.accent {color: #aee19d;}
 
 /* for the body */
 body {
-    background-color: darkslategray;
+    background-color: #405f6f;
     border: 3px dotted lawngreen;
 }
 body p {color: honeydew;}
 
 /*for the carousel*/
-#featured {border:3px lawngreen;}
+#featured {border:5px #dcff62 double;}
 
 /*for the section*/
-article {color: forestgreen;}
-section h2 {color: limegreen;}
-section img {border:3px dotted lawngreen; background-color: darkgreen;}
+
+section {
+    background-color: #74969a;
+}
+article {
+    color: forestgreen;
+
+}
+section h2 {
+    color: #dcff62;
+    border-bottom: 1px #aee19d solid;
+}
+section img {
+    border:7px limegreen double;
+    background-color: #dcff62;
+}
 
 /* for the footer */
 footer {
-    background-color: limegreen;
+    background-color: #aee19d;
     color: darkslategray;
 }

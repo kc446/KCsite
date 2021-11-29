@@ -1,20 +1,39 @@
-/** {background-color: white;}*/
+html {background-color: floralwhite;}
+
+/* palette:
+
+main 1: # / mistyrose
+main 2 (shade): #ffbfd1
+main 3 (darkest): #fd93c0
+
+accent 1: #
+accent 2 (hili): #
+accent 3 (lightest): #
+
+*/
 
 /* for the header */
 header h1 {color: lightcoral;}
-#subtitle {color: indianred;}
+#subtitle {
+    color: indianred;
+    border-bottom: 1px salmon solid;
+}
 
 /* for the navbar */
-.navbar-nav {border:1px solid crimson;}
+.navbar-nav {border:1px solid lightcoral;}
 .navbar .nav-item {
     background: linear-gradient(180deg, white, mistyrose);
-    border:1px solid lightcoral;
+    border:1px solid #ffbfd1;
+    border-bottom:2px solid deeppink;
 }
 
 #logo {width: 40px;}
 
-.nav-link, .dropdown-item {color: crimson;}
+.nav-link, .dropdown-item {color: salmon;}
 .nav-link:hover {color: lightcoral;}
+
+#current {border-bottom: 2px solid salmon !important;}
+#current a {color: crimson;}
 
 .dropdown-menu {
     background-color: floralwhite;
@@ -26,8 +45,7 @@ header h1 {color: lightcoral;}
     background-color: mistyrose;
 }
 
-.accent {color: hotpink;}
-.current {color: lightpink;}
+.accent {color: #fd93c0;}
 
 /* for the body */
 body {
@@ -37,12 +55,18 @@ body {
 body p {color: indianred;}
 
 /*for the carousel*/
-#featured {border:3px indianred;}
+#featured {border:5px crimson double;}
+
 
 /*for the section*/
 section {color: floralwhite;}
-section h2 {color: palevioletred;}
-section img {border:3px dotted crimson; background-color:floralwhite;}
+section h2 {
+    color: palevioletred;
+    border-bottom: 1px #fd93c0 solid;
+}
+section img {
+    border:7px salmon double;
+    background-color:floralwhite;}
 
 /* for the footer */
 footer {

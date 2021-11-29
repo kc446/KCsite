@@ -1,5 +1,4 @@
 * {
-    /*background-color: lightcyan;*/
     font-family: "Arial", sans-serif;
     margin:0;
     padding:0;
@@ -7,7 +6,7 @@
 
 /*media queries*/
 @media only screen and (max-width:767px) { /*landscape view*/
-    * {font-size:90%;}
+
 
     #mobile {
         display:block;
@@ -17,10 +16,9 @@
         width:100%;
     }
     #desktop {display:none;}
-    header h1 {font-size:50%;}
     header #subtitle {
         font-size:99%;
-        margin:auto;
+        margin:1em auto;
         padding: 0.5em 0;
         font-weight: bold;
     }
@@ -28,12 +26,20 @@
 }
 
 @media only screen and (max-width:480px) { /*portrait view*/
+
+    header h1 {
+        font-size: 280% !important;
+        margin: 0.25em auto;
+    }
+
     header #subtitle {
-        font-size:99%;
-        margin:auto;
-        padding: 1em 0;
+        font-size:75%;
+        margin:0.5em auto;
+        padding: 0.25em;
         font-weight: bold;
     }
+
+    #logo {display: none;}
 
     #mobile {
         overflow: hidden;
@@ -41,18 +47,36 @@
         bottom:0;
         width:100%;
     }
+
+    .switch {margin-top:1em;}
+
+    section {max-width:95% !important;}
+
+    article { width:initial !important;}
+
+    section img {
+        float:none !important;
+        clear:both !important;
+        width:inherit !important;
+    }
 }
 
 /*for the header*/
-header {text-align: center;}
+header {
+    margin:auto;
+    text-align: center;
+    width:90%;
+}
 header h1 {
-    font-size: 5em;
+    font-size: 5rem;
+    margin-bottom:0.25em;
     font-family: "Magnolia Script", sans-serif;
 }
 #subtitle {
     font-style: italic;
-    font-size: 2.5em;
-    padding-bottom: 0.25em;
+    font-weight: 50;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /*for the navbar*/
@@ -94,6 +118,7 @@ nav .navbar .nav {
 
 .nav-link {
     padding-top:1em;
+    font-weight:bold;
 }
 
 nav.navbar ul {
@@ -138,24 +163,29 @@ nav.navbar ul li a{
 
 /*for the body*/
 body {
-    margin: 0.75em auto 1em auto;
+    margin: 1em auto;
+    width:87.5%;
+}
+
+main {
     padding: 1em;
-    width:95%;
 }
 
 /*for the carousel*/
 #featured {
-    margin:0;
+    margin-left:5%;
+    margin-bottom:2.5%;
     padding:0;
     display:inline-block;
     position:relative;
-    width:98%;
-    alignment: center;
+    float:none;
+    clear:both;
+    width:90%;
 }
 
 /*for the section below the carousel*/
 section {
-    width: 95%;
+    width: 90%;
     margin:auto;
 }
 section img {
@@ -170,20 +200,16 @@ article {
     margin:auto;
     max-width:50%
 }
-article h2 {
+section h2 {
     font-family: "Magnolia Script",Arial,sans-serif;
-    margin:auto;
-    padding: 0.25em;
+    margin-bottom: 0.5em;
+    padding: 0.025em;
     font-size:2.5em;
-}
-article p {
-    margin-left: 1em;
-    padding: 0;
 }
 
 /*for the footer*/
 footer {
-    margin: 0.5em auto 0.25em auto;
+    margin: 0.5em auto 0 auto;
     padding: 1em;
     text-align:center;
     font-size:1em;
@@ -232,12 +258,8 @@ footer {
 
 #switch::after {background-color: lightgreen;}
 
-input:checked + .slider {
-    background-color: lightgreen;
-}
-/*input:focus + .slider {
-    box-shadow: 0 0 1px lightgreen;
-}*/
+input:checked + .slider {background-color: lightgreen;}
+/*input:focus + .slider {box-shadow: 0 0 1px lightgreen;}*/
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
