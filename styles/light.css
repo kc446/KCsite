@@ -54,13 +54,30 @@ body {
 }
 body p {color: indianred;}
 
+a:after {color:#fd93c0;}
+
 /*for the carousel*/
 #featured {border:5px crimson double;}
 
+/*for the cards*/
+
+
+
+/*for the form*/
+label {color: lightcoral;}
+
+input, textarea {
+    color: crimson;
+    background-color: white;
+    border: 1px solid lightpink;
+}
 
 /*for the section*/
-section {color: floralwhite;}
-section h2 {
+section,form {
+    background-color: floralwhite;
+    border:1px solid #fd93c0;
+}
+h2 {
     color: palevioletred;
     border-bottom: 1px #fd93c0 solid;
 }

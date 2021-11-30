@@ -56,19 +56,32 @@ body {
 }
 body p {color: honeydew;}
 
+a:after {color: honeydew;}
+
 /*for the carousel*/
 #featured {border:5px #dcff62 double;}
 
+/*for the cards*/
+
+
+
+/*for the form*/
+label {color:#aee19d}
+
+input, textarea {
+    color: #eafacb;
+    background-color: #405f6f;
+    border: 1px solid #aee19d;
+}
+
 /*for the section*/
 
-section {
-    background-color: #74969a;
+section, form {
+    background-color: #364556;
+    border: 1px solid #dcff62;
 }
-article {
-    color: forestgreen;
-
-}
-section h2 {
+article {color: forestgreen;}
+h2 {
     color: #dcff62;
     border-bottom: 1px #aee19d solid;
 }

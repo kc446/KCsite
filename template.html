@@ -9,10 +9,9 @@
     <link id="favicon" class="logo" rel="icon" href="img/lotus.png"> <!-- lotus by default-->
     <link rel="stylesheet" href="styles/main.css"> <!--for the whole site-->
     <link id="theme" rel="stylesheet" href="styles/light.css"> <!--theme -- light by default-->
+    <script id="toggle" type="text/javascript" src="scripts/themeToggle.js"></script>
 
-    <script id="toggle" type="javascript" src="scripts/themeToggle.js"></script>
-
-    <script type="javascript">
+    <script type="text/javascript">
         $(document).ready(function() {
             $('#desktop').element({prependTo:'#mobile'});
         });
@@ -37,9 +36,9 @@
     <nav class="navbar" id="desktop">
         <div class="container-fluid">
             <ul class="navbar-nav">
-                <li class="nav-item" id="current">
+                <li class="nav-item">
                     <img src="img/lotus.png" alt="Logo" style="max-width: 40px;" id="logo">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Works</a>
@@ -50,10 +49,10 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="resume.html">Resume</a>
+                    <a class="nav-link" href="#">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
@@ -61,44 +60,14 @@
 </header>
 
 <main>
-<!-- Carousel -->
-<div id="featured" class="carousel slide" data-bs-ride="carousel">
 
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#featured" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#featured" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#featured" data-bs-slide-to="2"></button>
-    </div>
-
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/gallery/urban nights.png" alt="Urban Nights" class="d-block w-100">
-        </div>
-        <div class="carousel-item">
-            <img src="img/gallery/A Lonely Lotus.png" alt="A Lonely Lotus" class="d-block w-100">
-        </div>
-        <div class="carousel-item">
-            <img src="img/gallery/distant.png" alt="distant" class="d-block w-100">
-        </div>
-    </div>
-
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#featured" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#featured" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-</div>
+<!-- Content -->
 
 <section id="bio">
     <h2>ABOUT</h2>
     <img src="img/profile.jpg" alt="myself">
 
     <article class="about">
-
         <p>I am a graphic designer currently pursuing a Communication major at New Jersey Institute of Technology. I draw, I code, I edit, etc., etc...I pretty much made this entire page myself.</p>
         <p>there will be MORE real words here about myself but right now this is just for testing while i figure out why the hell the theme toggle doesn't stay properly<br>
         but thank you for at least taking a sneaky-peeky at this work-in-progress though i really appreciate it</p>
