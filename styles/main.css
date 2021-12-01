@@ -213,7 +213,7 @@ main {
     width:90%;
     margin:auto;
 }
-a:visited, a:active {color:transparent;}
+a:visited, a:active {color:transparent !important;}
 
 h2 {
     font-family: "Magnolia Script",Arial,sans-serif;
