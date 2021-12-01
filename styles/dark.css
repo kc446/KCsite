@@ -43,13 +43,13 @@ header h1 {color: greenyellow;}
 }
 
 .dropdown-item:hover {
-    color: greenyellow;
-    background-color: darkgreen;
+    color: #dcff62;
+    background-color: #405f6f;
 }
 
 .accent {color: #aee19d;}
 
-/* for the body */
+/* for the body/overall */
 body {
     background-color: #405f6f;
     border: 3px dotted lawngreen;
@@ -58,11 +58,30 @@ body p {color: honeydew;}
 
 a:after {color: honeydew;}
 
+h2 {
+    color: #dcff62;
+    border-bottom: 1px #aee19d solid;
+}
+
+h3 {color:#aee19d;}
+h4 {color: #dcff62;}
+
 /*for the carousel*/
 #featured {border:5px #dcff62 double;}
 
 /*for the cards*/
-
+.card-row {
+    border-top: 1px #dcff62 solid;
+    border-bottom: 1px #dcff62 solid;
+}
+.card {
+    border:1px lawngreen solid;
+    background-color: #405f6f;
+}
+.card-body {background-color: darkslategray}
+.card-img-top {color: greenyellow;}
+.card-title {color: #aee19d;}
+.card-text {color:#fcffe8;}
 
 
 /*for the form*/
@@ -76,15 +95,12 @@ input, textarea {
 
 /*for the section*/
 
-section, form {
+section, form, #gallery {
     background-color: #364556;
     border: 1px solid #dcff62;
 }
 article {color: forestgreen;}
-h2 {
-    color: #dcff62;
-    border-bottom: 1px #aee19d solid;
-}
+
 section img {
     border:7px limegreen double;
     background-color: #dcff62;

@@ -6,26 +6,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <link id="favicon" class="logo" rel="icon" href="img/lotus.png"> <!-- lotus by default-->
-    <link rel="stylesheet" href="styles/main.css"> <!--for the whole site-->
-    <link id="theme" rel="stylesheet" href="styles/light.css"> <!--theme -- light by default-->
-    <script id="toggle" type="text/javascript" src="scripts/themeToggle.js"></script>
+    <link id="favicon" class="logo" rel="icon" href="/img/lotus.png"> <!-- lotus by default-->
+    <link rel="stylesheet" href="/styles/main.css"> <!--for the whole site-->
+    <link id="theme" rel="stylesheet" href="/styles/light.css"> <!--theme -- light by default-->
+    <script id="toggle" type="text/javascript" src="/scripts/themeToggle.js"></script>
 
-    <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         $(document).ready(function() {
             $('#desktop').element({prependTo:'#mobile'});
         });
     </script>
 
     <title>Kolleen Caffyn.</title>
-
 </head>
 
 <body>
 
 <header>
     <h1>Kolleen Caffyn.</h1>
-    <h2 id="subtitle">Graphic Designer, Digital Artist...working subtitle.</h2>
+    <h2 id="subtitle">Graphic Designer, Digital Artist... working subtitle.</h2>
     <label id="switch">
         <input type="checkbox" onclick="toggleTheme()" id="status">
         <span class="slider"></span>

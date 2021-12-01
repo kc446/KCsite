@@ -7,6 +7,8 @@
 /*media queries*/
 @media only screen and (max-width:767px) { /*landscape view*/
 
+    header h1 {font-size:300% !important;}
+
     #mobile {
         display:block;
         overflow: hidden;
@@ -15,13 +17,20 @@
         width:100%;
     }
     #desktop {display:none;}
+
     header #subtitle {
         font-size:99%;
-        margin:1em auto;
-        padding: 0.5em 0;
+        margin:0 auto 0.5em auto;
+        padding-bottom:0.5em;
         font-weight: bold;
     }
+
     .switch {margin-bottom: 1em;}
+
+    article {width:49% !important;}
+    section img {width:50% !important;}
+
+    .card-row {columns:2;}
 }
 
 @media only screen and (max-width:480px) { /*portrait view*/
@@ -35,7 +44,6 @@
         font-size:75%;
         margin:0.5em auto;
         padding: 0.25em;
-        font-weight: bold;
     }
 
     #logo {display: none;}
@@ -53,6 +61,7 @@
     main {padding: 0 !important;}
 
     article {
+        width:initial !important;
         max-width:initial !important;
         padding-top:1em;
     }
@@ -64,8 +73,23 @@
         max-width:inherit !important;
     }
 
-    #resume {
-        height:27.5em !important;
+    #resume {height:27.5em !important;}
+
+    .card-row {columns:1;}
+}
+
+@media only screen and (max-width: 399px) {
+
+    header h1 {
+        font-size: 240% !important;
+        margin: 0.25em auto;
+    }
+
+    header #subtitle {
+        font-size:75%;
+        margin:0.5em auto;
+        padding: 0.25em;
+        width:75%;
     }
 }
 
@@ -81,6 +105,8 @@ header h1 {
     font-family: "Magnolia Script", sans-serif;
 }
 #subtitle {
+    font-family:Arial,sans-serif;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: 50;
     padding-bottom: 0.5em;
@@ -99,9 +125,9 @@ header h1 {
 nav {
     position:relative;
     text-align:center;
-    margin: auto;
-    padding: 0;
-    width:100%
+    margin: 0 auto;
+    padding-bottom: 1em !important;
+    width:91.25%;
 }
 
 nav .navbar .nav {
@@ -123,6 +149,7 @@ nav .navbar .nav {
     flex-direction:row;
     width:100%;
 }
+.navbar-nav, .nav-item[id="current"]{border-bottom:none !important;}
 
 .nav-link {
     padding-top:1em;
@@ -145,15 +172,18 @@ nav.navbar ul li a{
     text-align:center;
     padding: 0.25em 0 0.25em 0;
     text-decoration:none;
+
 }
 
 .dropdown-menu {
     display: none;
-    position: center;
+    position: relative;
     text-align:center;
     padding:0;
     margin:auto;
     float: none;
+    clear:both;
+    max-width:inherit;
 }
 
 .navbar li:hover .dropdown-menu {
@@ -163,35 +193,91 @@ nav.navbar ul li a{
     flex-direction:column;
 }
 
+.dropdown-menu.show {
+    display: none;
+}
+
 .dropdown-item {
     margin: auto;
     position:center;
     text-align:center;
 }
 
-/*for the body*/
+/*for the body/overall layout*/
 body {
     margin: 1em auto;
     width:87.5%;
 }
+main {
+    padding-top: 1em;
+    width:90%;
+    margin:auto;
+}
+a:visited, a:active {color:transparent;}
 
-main {padding: 1em;}
+h2 {
+    font-family: "Magnolia Script",Arial,sans-serif;
+    margin-bottom: 0.25em;
+    padding: 0.025em;
+    font-size:2.5em;
+}
+
+h3 {
+    font-style:italic;
+    font-weight:lighter;
+    font-size: 1.25em;
+    padding-bottom:1em;
+}
+
+/*for the cards*/
+
+#gallery {
+    margin-bottom:2.5em;
+    padding:2.5em;
+}
+
+.card { text-align:center;}
+
+.card-img-top[alt] {text-align:center;}
+.card-title {text-align: center;}
+.wide .card-text {text-align: center;}
+
+.card-row {
+    width:inherit;
+    margin:1.5em 0;
+    padding:1.5em 0;
+    columns:3;}
+
+.double {
+    columns:2;
+}
+
+.card-row .card {
+    margin:auto;
+    display:inline-block;
+}
+
+.horiz {
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+
+.horiz .card-title {text-align:revert;}
 
 /*for the carousel*/
 #featured {
     margin-left:5%;
-    margin-bottom:2.5%;
-    padding:0;
-    display:inline-block;
-    position:relative;
-    float:none;
-    clear:both;
     width:90%;
+}
+
+.carousel-item::after, .carousel-item::before { /*animation kinda jumps the carousel up a pixel which is very noticeable since it has a border around it*/
+
 }
 
 /*for the section below the carousel*/
 section {
-    margin:auto 5%;
+    margin:1em 5%;
     display:inline-block;
     padding:1em;
 }
@@ -205,14 +291,9 @@ article {
     float:left;
     display:inline-block;
     margin:auto;
-    max-width:50%
+    max-width:66%
 }
-h2 {
-    font-family: "Magnolia Script",Arial,sans-serif;
-    margin-bottom: 0.5em;
-    padding: 0.025em;
-    font-size:2.5em;
-}
+
 
 /*for the resume*/
 #resume {
@@ -221,7 +302,6 @@ h2 {
     width:90%;
     height:75em;
 }
-
 #resume h2 {
     padding:0;
     margin:0;
@@ -299,7 +379,6 @@ footer {
 }
 
 #switch::before {background-color: lightpink;}
-
 #switch::after {background-color: lightgreen;}
 
 input:checked + .slider {background-color: lightgreen;}

@@ -6,34 +6,48 @@ main 1: # / mistyrose
 main 2 (shade): #ffbfd1
 main 3 (darkest): #fd93c0
 
-accent 1: #
-accent 2 (hili): #
+accent 1: #f3ffb9
+accent 2 (hili): #f5e960 - the color 'o corn
 accent 3 (lightest): #
 
+*/
+
+/*the mystery color that may never actually get used: #6beaea (bright blue)
+
+accent candidates:
+    - aqua/mint:
+        - #ebfef9 (lightest)
+        - #d7fef2 (lighter)
+        - #b3e9c7 (misty)
+        - #a1fcdf (light)
+        - #7fd8be (dark)
+        - #5171a5 OR #214f4b (pseudo-black)
+
+    - #ffb4a2 - peachy keen
+    - #
 */
 
 /* for the header */
 header h1 {color: lightcoral;}
 #subtitle {
     color: indianred;
-    border-bottom: 1px salmon solid;
-}
+    border-bottom: 1px salmon solid;}
 
 /* for the navbar */
+nav {border-bottom: 2px salmon dotted;}
 .navbar-nav {border:1px solid lightcoral;}
 .navbar .nav-item {
     background: linear-gradient(180deg, white, mistyrose);
     border:1px solid #ffbfd1;
-    border-bottom:2px solid deeppink;
+    border-bottom:2px deeppink solid;
 }
 
 #logo {width: 40px;}
-
 .nav-link, .dropdown-item {color: salmon;}
 .nav-link:hover {color: lightcoral;}
 
-#current {border-bottom: 2px solid salmon !important;}
-#current a {color: crimson;}
+#current {border-bottom: 2px #7fd8be solid !important;}
+#current a {color: #da4167;}
 
 .dropdown-menu {
     background-color: floralwhite;
@@ -44,28 +58,42 @@ header h1 {color: lightcoral;}
     color: indianred;
     background-color: mistyrose;
 }
+.accent {color: #f5e960;}
 
-.accent {color: #fd93c0;}
-
-/* for the body */
+/* for the body/overall */
 body {
     background-color: mistyrose;
     border: 3px dotted lightcoral;
 }
 body p {color: indianred;}
 
-a:after {color:#fd93c0;}
+h2 {
+    color: palevioletred;
+    border-bottom: 1px #fd93c0 solid;
+}
+h3 {color: salmon;}
+h4 {color:crimson;}
 
 /*for the carousel*/
 #featured {border:5px crimson double;}
+div .carousel {border-bottom:1px salmon solid !important;}
 
 /*for the cards*/
-
-
+.card-row {
+    border-top: 1px deeppink solid;
+    border-bottom: 1px deeppink solid;
+}
+.card {
+    border:1px #6beaea solid;
+    background-color: #7fd8be;
+}
+.card-body {background-color: #ebfef9}
+.card-img-top {color: #d7fef2;}
+.card-title {color: #5171a5;}
+.card-text {color:#439775;}
 
 /*for the form*/
 label {color: lightcoral;}
-
 input, textarea {
     color: crimson;
     background-color: white;
@@ -73,14 +101,11 @@ input, textarea {
 }
 
 /*for the section*/
-section,form {
+section,form,#gallery {
     background-color: floralwhite;
     border:1px solid #fd93c0;
 }
-h2 {
-    color: palevioletred;
-    border-bottom: 1px #fd93c0 solid;
-}
+
 section img {
     border:7px salmon double;
     background-color:floralwhite;}
