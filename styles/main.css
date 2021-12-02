@@ -4,10 +4,14 @@
     padding:0;
 }
 
-/*media queries*/
-@media only screen and (max-width:767px) { /*landscape view*/
+link[href="../styles/dark.css"] {display:none !important;}
 
-    header h1 {font-size:300% !important;}
+/*media queries*/
+@media only screen and (max-width:959px) { /*tablet view*/
+
+    header h1 {font-size:300%;}
+
+    h1,h2 {font-family: "Lato", sans-serif;}
 
     #mobile {
         display:block;
@@ -27,9 +31,44 @@
 
     .switch {margin-bottom: 1em;}
 
+    main h2,h3 {text-align:center;}
+
     article {width:49% !important;}
     section img {width:50% !important;}
 
+    .horiz .card-img-top {width:360%;}
+}
+
+@media only screen and (max-width:767px) { /*landscape view*/
+
+    header h1 {font-size:300% !important;}
+
+    h1,h2 {font-family: "Lato", sans-serif;}
+
+    #mobile {
+        display:block;
+        overflow: hidden;
+        position:fixed;
+        bottom:0;
+        width:100%;
+    }
+    #desktop {display:none;}
+
+    header #subtitle {
+        font-size:99%;
+        margin:0 auto 0.5em auto;
+        padding-bottom:0.5em;
+        font-weight: bold;
+    }
+
+    .switch {margin-bottom: 1em;}
+
+    main h2,h3 {text-align:center;}
+
+    article {width:49% !important;}
+    section img {width:50% !important;}
+
+    .horiz .card-img-top {width: initial;}
     .card-row {columns:2;}
 }
 
@@ -38,6 +77,12 @@
     header h1 {
         font-size: 280% !important;
         margin: 0.25em auto;
+    }
+
+    main h2,h3 {
+        font-size:200%;
+        margin:0.25em auto;
+        text-align:center;
     }
 
     header #subtitle {
@@ -75,7 +120,11 @@
 
     #resume {height:27.5em !important;}
 
-    .card-row {columns:1;}
+    .horiz {flex-direction:column !important;}
+    .card-row {columns:1 !important;}
+
+    .card {margin:1em 0 !important;}
+    .card-body {padding:0.25em !important;}
 }
 
 @media only screen and (max-width: 399px) {
@@ -102,7 +151,7 @@ header {
 header h1 {
     font-size: 5rem;
     margin-bottom:0.25em;
-    font-family: "Magnolia Script", sans-serif;
+    font-family: "Magnolia Script", "Lato", sans-serif;
 }
 #subtitle {
     font-family:Arial,sans-serif;
@@ -216,7 +265,7 @@ main {
 a:visited, a:active {color:transparent;}
 
 h2 {
-    font-family: "Magnolia Script",Arial,sans-serif;
+    font-family: "Magnolia Script","Lato",sans-serif;
     margin-bottom: 0.25em;
     padding: 0.025em;
     font-size:2.5em;
@@ -236,7 +285,7 @@ h3 {
     padding:2.5em;
 }
 
-.card { text-align:center;}
+.card {text-align:center;}
 
 .card-img-top[alt] {text-align:center;}
 .card-title {text-align: center;}
