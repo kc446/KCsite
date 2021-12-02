@@ -86,12 +86,14 @@ h4 {color: #dcff62;}
 
 /*for the form*/
 label {color:#aee19d}
-
 input, textarea {
     color: #eafacb;
     background-color: #405f6f;
     border: 1px solid #aee19d;
 }
+input:focus, input:active, textarea:focus, textarea:active { border:2px greenyellow solid;}
+textarea[placeholder] {color: lime;}
+input[type="submit"] {color: #dcff62;}
 
 /*for the section*/
 

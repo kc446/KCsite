@@ -34,7 +34,7 @@ header h1 {color: lightcoral;}
     border-bottom: 1px salmon solid;}
 
 /* for the navbar */
-nav {border-bottom: 2px salmon dotted;}
+/*nav {border-bottom: 2px salmon dotted;}*/
 .navbar-nav {border:1px solid lightcoral;}
 .navbar .nav-item {
     background: linear-gradient(180deg, white, mistyrose);
@@ -95,9 +95,16 @@ div .carousel {border-bottom:1px salmon solid !important;}
 /*for the form*/
 label {color: lightcoral;}
 input, textarea {
+    color: #439775;
+    background-color:white;
+    border:1px crimson solid;
+}
+input:focus, input:active, textarea:focus, textarea:active { border:1px #6beaea solid;}
+textarea[placeholder] {color: palevioletred;}
+input[type="submit"] {
     color: crimson;
-    background-color: white;
-    border: 1px solid lightpink;
+    background-color:white;
+    border:1px crimson solid;
 }
 
 /*for the section*/
