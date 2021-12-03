@@ -276,8 +276,9 @@ nav.navbar ul li a{
     width: 25%;
     padding: 12px 0; /* Some top and bottom padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
-    font-size: 36px; /* Increased font size */
 }
+
+.icon-bar i {font-size:36px;}
 
 #dropup {
     position:relative;
