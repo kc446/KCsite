@@ -59,8 +59,11 @@ header h1 {color: greenyellow;}
     background: linear-gradient(180deg, #04AA60, seagreen);
     border-left:1px forestgreen solid !important;
     border-right:1px forestgreen solid!important;
-    border-top:2px greenyellow solid !important;
+    border-top:2px #eafacb solid !important;
 } /*active/current color*/
+
+.dropup-content a {color:honeydew;}
+
 
 .accent {color: #aee19d;}
 
@@ -102,17 +105,17 @@ h4 {color: #dcff62;}
 /*for the form*/
 label {color:#aee19d}
 input, textarea {
-    color: #eafacb;
+    color: honeydew;
     background-color: #405f6f;
     border: 1px solid #aee19d;
 }
 input:focus, input:active, textarea:focus, textarea:active { border:2px greenyellow solid;}
-textarea[placeholder] {color: lime;}
+textarea[placeholder] {color: #eafacb;}
 input[type="submit"] {color: #dcff62;}
 
 /*for the section*/
 
-section, form, #gallery {
+section, form, #gallery, #wip {
     background-color: #364556;
     border: 1px solid #dcff62;
 }

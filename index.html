@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="styles/main.css"> <!--for the whole site-->
     <link id="theme" rel="stylesheet" href="styles/light.css"> <!--theme -- light by default-->
     <script id="toggle" type="text/javascript" src="scripts/themeToggle.js"></script>
+    <script type="text/javascript" src="scripts/mobileDropup.js"></script>
 
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         $(document).ready(function() {
             $('#desktop').element({prependTo:'#mobile'});
         });
-    </script>-->
+    </script>
 
     <title>Kolleen Caffyn.</title>
 </head>
@@ -32,13 +33,14 @@
         <span class="slider"></span>
     </label>
 
-    <!--mobile toggle???
-    light icon: <i class="fa fa-sun-o"></i>
-    dark icon: <i class="fa fa-moon-o"></i>>
-    -->
     <nav class="navbar icon-bar navbar-fixed-bottom" id="mobile">
         <a class="active" href="#"><i class="fa fa-home"></i></a>
-        <a href="illust.html"><i class="fa fa-paint-brush"></i></a>
+        <button id="dropup" onfocus="dropUp()"><i class="fa fa-star"></i></button>
+        <div id="dropup-menu" class="dropup-content">
+            <a href="illust.html">Illustrations<i class="fa fa-paint-brush dropup-icon"></i></a>
+            <a href="programming.html">Programming<i class="fa fa-terminal dropup-icon"></i></a>
+            <a href="music.html">Music<i class="fa fa-music dropup-icon"></i></a>
+        </div>
         <a href="resume.html"><i class="fa fa-file-text"></i></a>
         <a href="contact.html"><i class="fa fa-envelope"></i></a>
     </nav>
@@ -54,7 +56,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="illust.html">Illustrations</a></li>
                         <li><a class="dropdown-item" href="#">Programming</a></li>
-                        <li><a class="dropdown-item" href="#">Music</a></li>
+                        <li><a class="dropdown-item" href="music.html">Music</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

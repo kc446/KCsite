@@ -61,12 +61,11 @@ header h1 {color: lightcoral;}
 
 /*for the mobile navbar specifically*/
 .icon-bar {background: linear-gradient(180deg, floralwhite, mistyrose);}
-.icon-bar a {
+.icon-bar a, #dropup {
     color:indianred;
     border-left: 1px solid lightpink;
     border-top:2px indianred solid;
 }
-
 /*.icon-bar a:hover, a:focus {background: linear-gradient(180deg, , #d7fef2);} hover color*/
 .icon-bar a.active {
     background:linear-gradient(180deg,#ebfef9, #d7fef2);
@@ -74,7 +73,22 @@ header h1 {color: lightcoral;}
     border-left:1px solid #7fd8be !important;
     border-right:1px solid #7fd8be !important;
     border-top:2px cornflowerblue solid !important;
-} /*active/current color*/
+}
+
+.dropup-content {
+    background-color: #d7fef2 !important;
+}
+
+.show {border: 1px #7fd8be solid !important;}
+
+.dropup-content a {
+    color:#5171a5;
+    border-top:none;
+    border-left:none;
+    border-bottom:1px cornflowerblue solid;
+}
+
+.dropup-icon {color: #7fd8be}
 
 .accent {color: #f5e960;}
 
@@ -126,7 +140,7 @@ input[type="submit"] {
 }
 
 /*for the section*/
-section,form,#gallery {
+section,form,#gallery, #wip {
     background-color: floralwhite;
     border:1px solid #fd93c0;
 }

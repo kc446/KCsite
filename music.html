@@ -35,13 +35,13 @@
 
     <nav class="navbar icon-bar navbar-fixed-bottom" id="mobile">
         <a href="index.html"><i class="fa fa-home"></i></a>
-        <button id="dropup" onfocus="dropUp()"><i class="fa fa-star"></i></button>
+        <button id="dropup" onfocus="dropUp()" class="active dropup"><i class="fa fa-star"></i></button>
         <div id="dropup-menu" class="dropup-content">
             <a href="illust.html">Illustrations<i class="fa fa-paint-brush dropup-icon"></i></a>
             <a href="programming.html">Programming<i class="fa fa-terminal dropup-icon"></i></a>
-            <a href="music.html">Music<i class="fa fa-music dropup-icon"></i></a>
+            <a href="#">Music<i class="fa fa-music dropup-icon"></i></a>
         </div>
-        <a class="active"  href="#"><i class="fa fa-file-text"></i></a>
+        <a href="resume.html"><i class="fa fa-file-text"></i></a>
         <a href="contact.html"><i class="fa fa-envelope"></i></a>
     </nav>
     <nav class="navbar" id="desktop">
@@ -54,13 +54,13 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Works</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="illust.html">Top</a></li>
-                        <li><a class="dropdown-item" href="#">Recent</a></li>
-                        <li><a class="dropdown-item" href="#">Categories</a></li>
+                        <li><a class="dropdown-item" href="illust.html">Illustrations</a></li>
+                        <li><a class="dropdown-item" href="#">Programming</a></li>
+                        <li><a class="dropdown-item" href="#">Music</a></li>
                     </ul>
                 </li>
-                <li class="nav-item" id="current">
-                    <a class="nav-link active" href="#">Resume</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -72,9 +72,12 @@
 
 <main>
 
-<!-- Resume -->
-    <p>(note to self...please replace this with a plain text version so people can actually read it on their phones)</p>
-    <embed id="resume" src="resume.pdf" alt="resume" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
+    <!-- Content -->
+    <div id="wip">
+        <h2>Coming Soon!</h2>
+        <h3>This page is still a work in progress.<br>Be sure to check back here often for content!</h3>
+    </div>
+
 </main>
 
 </body>
