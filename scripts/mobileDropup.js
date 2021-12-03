@@ -1,3 +1,5 @@
+/* DEVELOPER: Kolleen Caffyn, IS 117-001, Fall 2021 */
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropUp() {

@@ -1,3 +1,5 @@
+/* DEVELOPER: Kolleen Caffyn, IS 117-001, Fall 2021 */
+
 // light/dark mode toggle script, a.k.a. eternal suffering
 
 //initializing variables for the sake of keeping things relatively neat

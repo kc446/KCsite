@@ -1,3 +1,5 @@
+/* DEVELOPER: Kolleen Caffyn, IS 117-001, Fall 2021 */
+
 * {
     font-family: "Lato", "Arial", sans-serif;
     margin:0;
@@ -276,6 +278,7 @@ nav.navbar ul li a{
     width: 25%;
     padding: 12px 0; /* Some top and bottom padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
+    font-size:200%;
 }
 
 .icon-bar i {font-size:36px;}
@@ -309,7 +312,6 @@ nav.navbar ul li a{
 .dropup-icon {
     clear:both;
     padding:0;
-    font-size:100% !important;
 }
 
 
