@@ -36,8 +36,6 @@ link[href="../styles/dark.css"] {display:none !important;}
 
     header h1 {font-size:300% !important;}
 
-    h1,h2 {font-family: "Lato", sans-serif;}
-
     header #subtitle {
         font-size:99%;
         margin:0 auto 0.5em auto;
@@ -124,7 +122,35 @@ link[href="../styles/dark.css"] {display:none !important;}
         max-width:inherit !important;
     }
 
-    #resume {height:27.5em !important;}
+    #resume {
+        font-size:90%;
+        margin:0;
+    }
+
+    #resume h1 {font-size:250%;}
+    #resume h2 {
+        font-size:200%;
+        text-align:revert;
+    }
+    #resume h3 {
+        font-size:130%;
+        text-align:revert;
+    }
+
+    .job h4 {margin-top:0;}
+
+    #resume ul {
+        margin:0;
+        padding:0;}
+    #resume ul li {
+        padding-left:0;
+        margin-left:1em !important;
+    }
+    #resume .dates {
+        font-size:80% !important;
+        clear:both;
+        float:none;
+    }
 
     .horiz {flex-direction:column !important;}
     .card-row {column-count:1 !important;}
@@ -162,7 +188,7 @@ header {
 header h1 {
     font-size: 5rem;
     margin-bottom:0.25em;
-    font-family: "Magnolia Script", "Lato", sans-serif;
+    border:none;
 }
 #subtitle {
     font-family:Arial,sans-serif;
@@ -296,7 +322,6 @@ nav.navbar ul li a{
     border:none !important;
     display:none;
 }
-
 .dropup-content a {
     text-align:revert;
     float:left;
@@ -308,12 +333,10 @@ nav.navbar ul li a{
     font-weight:400;
     display:block;
 }
-
 .dropup-icon {
     clear:both;
     padding:0;
 }
-
 
 /*for the body/overall layout*/
 body {
@@ -327,6 +350,11 @@ main {
 }
 a:visited, a:active, a:focus {color:transparent;}
 
+h1 {
+    font-size:3.75em;
+    font-family: "Magnolia Script", "Lato", sans-serif;
+}
+
 h2 {
     font-family: "Magnolia Script","Lato",sans-serif;
     margin-bottom: 0.25em;
@@ -335,11 +363,16 @@ h2 {
 }
 
 h3 {
-    font-style:italic;
     font-weight:lighter;
-    font-size: 1.25em;
-    padding-bottom:1em;
+    font-size: 1.5em;
 }
+h4 {
+    font-size:1.15em;
+    font-style:italic;
+    margin:0.75em auto;
+}
+
+p {margin-bottom:0.5em;}
 
 #wip {
     text-align:center;
@@ -412,16 +445,17 @@ article {
 }
 
 /*for the resume*/
-#resume {
-    margin:auto;
-    display:block;
-    width:90%;
-    height:75em;
+#resume em{
+    padding: 1.25em 0 0;
+    margin:0 auto;
 }
-#resume h2 {
-    padding:0;
-    margin:0;
+.dates {
+    float:right;
+    font-size:1.25em;
 }
+#resume ul {margin:0.25em auto 1em;}
+#resume ul li {margin-left:2.5em;}
+
 
 /*for the contact form*/
 form {

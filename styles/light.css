@@ -4,29 +4,23 @@ html {background-color: floralwhite;}
 
 /* palette:
 
-main 1: # / mistyrose
+main
+base: # / mistyrose
 main 2 (shade): #ffbfd1
 main 3 (darkest): #fd93c0
 
-accent 1: #f3ffb9
-accent 2 (hili): #f5e960 - the color 'o corn
-accent 3 (lightest): #
-
+accent
+base: #a1fcdf
+dark: #5171a5 OR #214f4b
+shade: #7fd8be OR #22b0d0
+hili: #d7fef2 OR #b3e9c7 (misty)
+lightest: #ebfef9
+*extra: #6beaea (bright blue)
 */
 
-/*the mystery color that may never actually get used: #6beaea (bright blue)
-
-accent candidates:
-    - aqua/mint:
-        - #ebfef9 (lightest)
-        - #d7fef2 (lighter)
-        - #b3e9c7 (misty)
-        - #a1fcdf (light)
-        - #7fd8be (dark)
-        - #5171a5 OR #214f4b (pseudo-black)
-
+/*accent candidates:
     - #ffb4a2 - peachy keen
-    - #
+    - #f5e960 - the color 'o corn
 */
 
 /* for the header */
@@ -45,20 +39,21 @@ header h1 {color: lightcoral;}
 }
 
 #logo {width: 40px;}
-.nav-link, .dropdown-item {color: salmon;}
-.nav-link:hover {color: lightcoral;}
+.nav-link {color: salmon;}
+.nav-link:hover {color: #22b0d0;}
 
 #current {border-bottom: 2px #7fd8be solid !important;}
 #current a {color: #da4167;}
 
+.dropdown-item {color:#22b0d0}
 .dropdown-menu {
-    background-color: floralwhite;
-    border: 1px solid indianred;
+    background-color: #ebfef9;
+    border: 1px #5171a5 solid;
 }
 
 .dropdown-item:hover {
-    color: indianred;
-    background-color: mistyrose;
+    color: #5171a5;
+    background-color: #6beaea;
 }
 
 /*for the mobile navbar specifically*/
@@ -101,12 +96,19 @@ body {
 }
 body p {color: indianred;}
 
-h2 {
+
+h1 {
     color: palevioletred;
     border-bottom: 1px #fd93c0 solid;
 }
-h3 {color: salmon;}
-h4 {color:crimson;}
+h2 {
+    color: salmon;
+    border-bottom:1px solid;
+}
+h3 {color:crimson;}
+h4 {color:hotpink;}
+
+em {color:palevioletred;}
 
 /*for the carousel*/
 #featured {border:5px crimson double;}
@@ -126,15 +128,18 @@ div .carousel {border-bottom:1px salmon solid !important;}
 .card-title {color: #5171a5;}
 .card-text {color:#439775;}
 
+/*for the resume*/
+#resume ul {color:crimson;}
+#resume a {color: #22b0d0;}
+
 /*for the form*/
 label {color: lightcoral;}
-input, textarea {
-    color: #439775;
+input[type="text"], textarea {
+    color: palevioletred;
     background-color:white;
     border:1px crimson solid;
 }
-input:focus, input:active, textarea:focus, textarea:active { border:1px #6beaea solid;}
-textarea[placeholder] {color: palevioletred;}
+input[type="text"]:focus, input[type="text"]:active, textarea:focus, textarea:active { border:1px #6beaea solid;}
 input[type="submit"] {
     color: crimson;
     background-color:white;

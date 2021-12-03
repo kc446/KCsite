@@ -78,6 +78,11 @@ body p {color: honeydew;}
 
 a:after {color: honeydew;}
 
+h1 {
+    color: greenyellow;
+    border-bottom: 1px honeydew solid;
+}
+
 h2 {
     color: #dcff62;
     border-bottom: 1px #aee19d solid;
