@@ -1,11 +1,11 @@
 // light/dark mode toggle script, a.k.a. eternal suffering
 
 //initializing variables for the sake of keeping things relatively neat
-const light= '/styles/light.css';
-const dark = '/styles/dark.css';
+const light= 'styles/light.css';
+const dark = 'styles/dark.css';
 
-let lotus = '/img/lotus.png';
-let glowshroom = '/img/glowshroom.png';
+let lotus = 'img/lotus.png';
+let glowshroom = 'img/glowshroom.png';
 
 function toggleTheme() {
 

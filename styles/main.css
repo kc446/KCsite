@@ -13,15 +13,6 @@ link[href="../styles/dark.css"] {display:none !important;}
 
     h1,h2 {font-family: "Lato", sans-serif;}
 
-    #mobile {
-        display:block;
-        overflow: hidden;
-        position:fixed;
-        bottom:0;
-        width:100%;
-    }
-    #desktop {display:none;}
-
     header #subtitle {
         font-size:99%;
         margin:0 auto 0.5em auto;
@@ -44,15 +35,6 @@ link[href="../styles/dark.css"] {display:none !important;}
     header h1 {font-size:300% !important;}
 
     h1,h2 {font-family: "Lato", sans-serif;}
-
-    #mobile {
-        display:block;
-        overflow: hidden;
-        position:fixed;
-        bottom:0;
-        width:100%;
-    }
-    #desktop {display:none;}
 
     header #subtitle {
         font-size:99%;
@@ -91,17 +73,30 @@ link[href="../styles/dark.css"] {display:none !important;}
         padding: 0.25em;
     }
 
+    body {padding-bottom:0;}
     #logo {display: none;}
 
-    #mobile {
-        overflow: hidden;
+    .navbar  {display:none !important;}
+    .icon-bar {display:block !important;}
+
+    #mobile{
+        overflow:hidden;
         position:fixed;
         bottom:0;
-        width:100%;
+        left:0;
     }
 
+    #mobile a {
+        padding-top:0;
+        padding-bottom: 0;
+    }
+
+    #mobile i{font-size: 85%;}
+
     .container-fluid {padding:0 !important;}
-    .switch {margin-top:1em;}
+    .switch {
+        margin:1em auto;
+    }
 
     main {padding: 0 !important;}
 
@@ -121,7 +116,7 @@ link[href="../styles/dark.css"] {display:none !important;}
     #resume {height:27.5em !important;}
 
     .horiz {flex-direction:column !important;}
-    .card-row {columns:1 !important;}
+    .card-row {column-count:1 !important;}
 
     .card {margin:1em 0 !important;}
     .card-body {padding:0.25em !important;}
@@ -171,12 +166,23 @@ header h1 {
     padding-left:0.5em;
 }
 
-nav {
+nav #desktop {
     position:relative;
     text-align:center;
     margin: 0 auto;
     padding-bottom: 1em !important;
     width:91.25%;
+}
+
+.icon-bar.navbar {
+    float:none;
+    clear:both;
+    padding:0 !important;}
+
+.navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
 }
 
 nav .navbar .nav {
@@ -252,6 +258,22 @@ nav.navbar ul li a{
     text-align:center;
 }
 
+/*for the mobile navbar, specifically*/
+
+.icon-bar {
+    width: 100%;
+    overflow:auto;
+}
+
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    font-size: 36px; /* Increased font size */
+}
+
 /*for the body/overall layout*/
 body {
     margin: 1em auto;
@@ -295,11 +317,9 @@ h3 {
     width:inherit;
     margin:1.5em 0;
     padding:1.5em 0;
-    columns:3;}
+    column-count:3;}
 
-.double {
-    columns:2;
-}
+.double {column-count:2;}
 
 .card-row .card {
     margin:auto;
@@ -342,7 +362,6 @@ article {
     margin:auto;
     max-width:66%
 }
-
 
 /*for the resume*/
 #resume {
@@ -398,6 +417,7 @@ footer {
     width: 54px;
     height: 28px;
     padding-bottom: 1em;
+    margin:0.5em auto;
 }
 #status {
     opacity: 0;

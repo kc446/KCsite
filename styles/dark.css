@@ -47,6 +47,21 @@ header h1 {color: greenyellow;}
     background-color: #405f6f;
 }
 
+/*for the mobile navbar specifically*/
+.icon-bar {background: linear-gradient(180deg, #405f6f, #364556);}
+.icon-bar a {
+    color:#aee19d;
+    border-left: 1px #5171a5 solid;
+    border-top:2px #dcff62 solid;}
+
+.icon-bar .active {
+    color:honeydew;
+    background: linear-gradient(180deg, #04AA60, seagreen);
+    border-left:1px forestgreen solid !important;
+    border-right:1px forestgreen solid!important;
+    border-top:2px greenyellow solid !important;
+} /*active/current color*/
+
 .accent {color: #aee19d;}
 
 /* for the body/overall */

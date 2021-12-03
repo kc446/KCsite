@@ -13,11 +13,11 @@
     <link id="theme" rel="stylesheet" href="styles/light.css"> <!--theme -- light by default-->
     <script id="toggle" type="text/javascript" src="scripts/themeToggle.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         $(document).ready(function() {
             $('#desktop').element({prependTo:'#mobile'});
         });
-    </script>
+    </script>-->
 
     <title>Kolleen Caffyn.</title>
 </head>
@@ -32,7 +32,16 @@
         <span class="slider"></span>
     </label>
 
-    <nav class="navbar" id="mobile"></nav>
+    <!--mobile toggle???
+    light icon: <i class="fa fa-sun-o"></i>
+    dark icon: <i class="fa fa-moon-o"></i>>
+    -->
+    <nav class="navbar icon-bar navbar-fixed-bottom" id="mobile">
+        <a class="active" href="#"><i class="fa fa-home"></i></a>
+        <a href="illust.html"><i class="fa fa-paint-brush"></i></a>
+        <a href="resume.html"><i class="fa fa-file-text"></i></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i></a>
+    </nav>
     <nav class="navbar" id="desktop">
         <div class="container-fluid">
             <ul class="navbar-nav">
@@ -108,4 +117,5 @@
 <footer>
     &copy; Kolleen Caffyn, 2021 || Privacy Statement || Terms of Use
 </footer>
+
 </html>
