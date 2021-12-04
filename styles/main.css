@@ -20,10 +20,11 @@ link[href="../styles/dark.css"] {display:none !important;}
         position:fixed;
         bottom:0;
         left:0;
-        width:100%;
-        margin:0;
+        width:99%;
+        margin:0 auto;
         padding:0;
     }
+    .container-fluid {padding:0;}
 
     header #subtitle {
         font-size:99%;
@@ -41,7 +42,7 @@ link[href="../styles/dark.css"] {display:none !important;}
     article {width:49% !important;}
     section img {width:50% !important;}
 
-    .horiz .card-img-top {width:360%;}
+    .horiz .card-img-top {width:160%;}
 }
 
 @media only screen and (max-width:767px) { /*landscape view*/
@@ -67,7 +68,7 @@ link[href="../styles/dark.css"] {display:none !important;}
     .job h4 {margin-top:0;}
     #resume .dates {font-size:105%;}
 
-    .horiz .card-img-top {width: initial;}
+    .horiz .card-img-top {width: 500%;}
     .card-row {columns:2;}
 }
 
@@ -156,6 +157,7 @@ link[href="../styles/dark.css"] {display:none !important;}
     }
 
     .horiz {flex-direction:column !important;}
+    .horiz .card-img-top {width:100%;}
     .card-row {column-count:1 !important;}
     .card {
         margin:1em 0 !important;
@@ -203,6 +205,7 @@ header h1 {
 }
 
 /*for the navbar*/
+nav {z-index:1000;}
 #desktop {display:block;}
 #mobile {display:none;}
 
@@ -260,7 +263,6 @@ nav.navbar ul li a{
     text-align:center;
     padding: 0.25em 0 0.25em 0;
     text-decoration:none;
-
 }
 
 .navbar-nav .dropdown-menu {
