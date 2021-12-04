@@ -32,11 +32,11 @@ header h1 {color: greenyellow;}
 }
 
 #logo {width: 39px;}
-.nav-link {color: #fcffe8;}
-.nav-link:hover {color: greenyellow;}
+.nav-link {color: #eafacb;}
+.nav-link:hover, .nav-link:focus {color: #aee19d;}
 
 #current {border-bottom: 2px solid #eafacb !important;}
-#current a {color: #aee19d;}
+#current a {color: honeydew;}
 
 .dropdown-item {color:#aee19d}
 .dropdown-menu {
@@ -108,7 +108,7 @@ em {color:#eafacb;}
     border:1px lawngreen solid;
     background-color: #405f6f;
 }
-.card-body {background-color: darkslategray}
+.card-body {background-color: #232c36}
 .card-img-top {color: greenyellow;}
 .card-title {color: #aee19d;}
 .card-text {color:#fcffe8;}
@@ -119,21 +119,26 @@ em {color:#eafacb;}
 
 /*for the form*/
 label {color:#aee19d}
-input, textarea {
+input[type="text"], textarea {
     color: honeydew;
-    background-color: #405f6f;
+    background-color: #232c36;
     border: 1px solid #aee19d;
 }
 input:focus, input:active, textarea:focus, textarea:active { border:2px greenyellow solid;}
 textarea[placeholder] {color: #eafacb;}
-input[type="submit"] {color: #dcff62;}
+input[type="submit"] {
+    color: #eafacb;
+    background-color: #364556;
+    border:1px solid #dcff62;
+}
 
 /*for the section*/
-
 section, form, #gallery, #wip {
-    background-color: #364556;
     border: 1px solid #dcff62;
 }
+
+section, #wip {background-color: #232c36;}
+#gallery, form {background-color: #364556;}
 article {color: forestgreen;}
 
 section img {
@@ -143,6 +148,6 @@ section img {
 
 /* for the footer */
 footer {
-    background-color: #aee19d;
+    background-color: #8dc47c;
     color: darkslategray;
 }

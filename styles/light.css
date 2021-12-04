@@ -37,12 +37,12 @@ header h1 {color: lightcoral;}
 
 #logo {width: 40px;}
 .nav-link {color: salmon;}
-.nav-link:hover {color: #22b0d0;}
+.nav-link:hover, .nav-link:focus {color: #22b0d0;}
 
 #current {border-bottom: 2px #7fd8be solid !important;}
 #current a {color: #da4167;}
 
-.dropdown-item {color:#22b0d0}
+.dropdown-item {color:#22b0d0 !important;}
 .dropdown-menu {
     background-color: #ebfef9;
     border: 1px #5171a5 solid;

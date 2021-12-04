@@ -263,7 +263,7 @@ nav.navbar ul li a{
 
 }
 
-.dropdown-menu {
+.navbar-nav .dropdown-menu {
     display: none;
     text-align:center;
     padding:0;
@@ -273,7 +273,7 @@ nav.navbar ul li a{
     max-width:inherit;
 }
 
-.navbar li:hover .dropdown-menu, .navbar li:active .dropdown-menu, .navbar li:focus .dropdown-menu {
+.navbar li:hover .dropdown-menu {
     display: flex !important;
     margin: auto;
     position: absolute;
@@ -283,6 +283,7 @@ nav.navbar ul li a{
 .dropdown-toggle:focus li, .dropdown-toggle:active li {
     display: none !important;
     border:none !important;
+    color:inherit;
 }
 
 .dropdown-item {
@@ -478,6 +479,10 @@ input, textarea {
     margin-bottom:0.5em;
     border-radius:5px;
     padding:0.05em 0.25em;
+}
+
+input[type='submit']{
+    padding:0.25em 0.5em;
 }
 
 #subject {width:60%;}
