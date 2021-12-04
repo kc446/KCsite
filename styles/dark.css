@@ -32,18 +32,17 @@ header h1 {color: greenyellow;}
 }
 
 #logo {width: 39px;}
-
-.nav-link, .dropdown-item {color: #fcffe8;}
+.nav-link {color: #fcffe8;}
 .nav-link:hover {color: greenyellow;}
 
 #current {border-bottom: 2px solid #eafacb !important;}
 #current a {color: #aee19d;}
 
+.dropdown-item {color:#aee19d}
 .dropdown-menu {
     background-color: darkslategray;
     border: 1px solid greenyellow;
 }
-
 .dropdown-item:hover {
     color: #dcff62;
     background-color: #405f6f;
@@ -51,23 +50,29 @@ header h1 {color: greenyellow;}
 
 /*for the mobile navbar specifically*/
 .icon-bar {background: linear-gradient(180deg, #405f6f, #364556);}
-.icon-bar a {
+.icon-bar a, #dropup {
     color:#aee19d;
     border-left: 1px #5171a5 solid;
     border-top:2px #dcff62 solid;}
 
-.icon-bar .active {
+.icon-bar a.active {
     color:honeydew;
     background: linear-gradient(180deg, #04AA60, seagreen);
     border-left:1px forestgreen solid !important;
     border-right:1px forestgreen solid!important;
     border-top:2px #eafacb solid !important;
-} /*active/current color*/
+}
+.dropup-content {background-color: darkslategray !important;}
 
-.dropup-content a {color:honeydew;}
+.show {border: 1px greenyellow solid !important;}
+.dropup-content a {
+    color:honeydew;
+    border-top:none;
+    border-left:none;
+    border-bottom:1px #aee19d solid;
+}
 
-
-.accent {color: #aee19d;}
+.dropup-icon {color: #dcff62}
 
 /* for the body/overall */
 body {
@@ -82,14 +87,14 @@ h1 {
     color: greenyellow;
     border-bottom: 1px honeydew solid;
 }
-
 h2 {
     color: #dcff62;
     border-bottom: 1px #aee19d solid;
 }
-
 h3 {color:#aee19d;}
 h4 {color: #dcff62;}
+
+em {color:#eafacb;}
 
 /*for the carousel*/
 #featured {border:5px #dcff62 double;}
@@ -108,6 +113,9 @@ h4 {color: #dcff62;}
 .card-title {color: #aee19d;}
 .card-text {color:#fcffe8;}
 
+/*for the resume*/
+#resume ul {color:honeydew;}
+#resume a {color: #dcff62;}
 
 /*for the form*/
 label {color:#aee19d}

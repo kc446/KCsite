@@ -15,6 +15,16 @@ link[href="../styles/dark.css"] {display:none !important;}
 
     h1,h2 {font-family: "Lato", sans-serif;}
 
+    .navbar {
+        overflow:hidden;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
     header #subtitle {
         font-size:99%;
         margin:0 auto 0.5em auto;
@@ -25,6 +35,8 @@ link[href="../styles/dark.css"] {display:none !important;}
     .switch {margin-bottom: 1em;}
 
     main h2,h3 {text-align:center;}
+
+    #resume h2,h3 {text-align:revert;}
 
     article {width:49% !important;}
     section img {width:50% !important;}
@@ -34,8 +46,6 @@ link[href="../styles/dark.css"] {display:none !important;}
 
 @media only screen and (max-width:767px) { /*landscape view*/
 
-    header h1 {font-size:300% !important;}
-
     header #subtitle {
         font-size:99%;
         margin:0 auto 0.5em auto;
@@ -43,12 +53,19 @@ link[href="../styles/dark.css"] {display:none !important;}
         font-weight: bold;
     }
 
-    .switch {margin-bottom: 1em;}
-
-    main h2,h3 {text-align:center;}
-
     article {width:49% !important;}
     section img {width:50% !important;}
+
+    #resume {
+        font-size:90%;
+        margin:0;
+    }
+    #resume ul {
+        margin:0;
+        padding:0;
+    }
+    .job h4 {margin-top:0;}
+    #resume .dates {font-size:105%;}
 
     .horiz .card-img-top {width: initial;}
     .card-row {columns:2;}
@@ -64,7 +81,6 @@ link[href="../styles/dark.css"] {display:none !important;}
     main h2,h3 {
         font-size:200%;
         margin:0.25em auto;
-        text-align:center;
     }
 
     header #subtitle {
@@ -122,22 +138,9 @@ link[href="../styles/dark.css"] {display:none !important;}
         max-width:inherit !important;
     }
 
-    #resume {
-        font-size:90%;
-        margin:0;
-    }
-
     #resume h1 {font-size:250%;}
-    #resume h2 {
-        font-size:200%;
-        text-align:revert;
-    }
-    #resume h3 {
-        font-size:130%;
-        text-align:revert;
-    }
-
-    .job h4 {margin-top:0;}
+    #resume h2 {font-size:200%;}
+    #resume h3 {font-size:130%;}
 
     #resume ul {
         margin:0;
@@ -262,7 +265,6 @@ nav.navbar ul li a{
 
 .dropdown-menu {
     display: none;
-    position: relative;
     text-align:center;
     padding:0;
     margin:auto;
@@ -271,20 +273,26 @@ nav.navbar ul li a{
     max-width:inherit;
 }
 
-.navbar li:hover .dropdown-menu {
-    display: flex;
+.navbar li:hover .dropdown-menu, .navbar li:active .dropdown-menu, .navbar li:focus .dropdown-menu {
+    display: flex !important;
     margin: auto;
     position: absolute;
-    flex-direction:column;
+    flex-direction:column !important;
 }
 
-.dropdown-menu.show {
-    display: none;
+.dropdown-toggle:focus li, .dropdown-toggle:active li {
+    display: none !important;
+    border:none !important;
 }
 
 .dropdown-item {
     margin: auto;
     position:center;
+    text-align:center;
+}
+
+.dropdown-menu li {
+    clear:both;
     text-align:center;
 }
 
@@ -455,7 +463,6 @@ article {
 }
 #resume ul {margin:0.25em auto 1em;}
 #resume ul li {margin-left:2.5em;}
-
 
 /*for the contact form*/
 form {

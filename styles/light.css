@@ -3,7 +3,6 @@
 html {background-color: floralwhite;}
 
 /* palette:
-
 main
 base: # / mistyrose
 main 2 (shade): #ffbfd1
@@ -16,11 +15,10 @@ shade: #7fd8be OR #22b0d0
 hili: #d7fef2 OR #b3e9c7 (misty)
 lightest: #ebfef9
 *extra: #6beaea (bright blue)
-*/
 
-/*accent candidates:
-    - #ffb4a2 - peachy keen
-    - #f5e960 - the color 'o corn
+other
+- #ffb4a2 - peachy keen
+- #f5e960 - the color 'o corn
 */
 
 /* for the header */
@@ -30,7 +28,6 @@ header h1 {color: lightcoral;}
     border-bottom: 1px salmon solid;}
 
 /* for the navbar */
-/*nav {border-bottom: 2px salmon dotted;}*/
 .navbar-nav {border:1px solid lightcoral;}
 .navbar .nav-item {
     background: linear-gradient(180deg, white, mistyrose);
@@ -50,7 +47,6 @@ header h1 {color: lightcoral;}
     background-color: #ebfef9;
     border: 1px #5171a5 solid;
 }
-
 .dropdown-item:hover {
     color: #5171a5;
     background-color: #6beaea;
@@ -61,20 +57,16 @@ header h1 {color: lightcoral;}
 .icon-bar a, #dropup {
     color:indianred;
     border-left: 1px solid lightpink;
-    border-top:2px indianred solid;
-}
-/*.icon-bar a:hover, a:focus {background: linear-gradient(180deg, , #d7fef2);} hover color*/
+    border-top:2px indianred solid;}
+
 .icon-bar a.active {
-    background:linear-gradient(180deg,#ebfef9, #d7fef2);
     color: cornflowerblue;
+    background:linear-gradient(180deg,#ebfef9, #d7fef2);
     border-left:1px solid #7fd8be !important;
     border-right:1px solid #7fd8be !important;
     border-top:2px cornflowerblue solid !important;
 }
-
-.dropup-content {
-    background-color: #d7fef2 !important;
-}
+.dropup-content {background-color: #d7fef2 !important;}
 
 .show {border: 1px #7fd8be solid !important;}
 
@@ -87,15 +79,12 @@ header h1 {color: lightcoral;}
 
 .dropup-icon {color: #7fd8be}
 
-.accent {color: #f5e960;}
-
 /* for the body/overall */
 body {
     background-color: mistyrose;
     border: 3px dotted lightcoral;
 }
 body p {color: indianred;}
-
 
 h1 {
     color: palevioletred;
