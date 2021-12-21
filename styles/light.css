@@ -1,4 +1,4 @@
-/* DEVELOPER: Kolleen Caffyn, IS 117-001, Fall 2021 */
+/* DEVELOPER: Kolleen Caffyn, 2021 */
 
 html {background-color: floralwhite;}
 
@@ -49,7 +49,7 @@ header h1 {color: lightcoral;}
 }
 .dropdown-item:hover {
     color: #5171a5;
-    background-color: #6beaea;
+    background-color: #a1fcdf;
 }
 
 /*for the mobile navbar specifically*/
