@@ -11,7 +11,7 @@
     <link id="favicon" class="logo" rel="icon" href="img/lotus.png"> <!-- lotus by default-->
     <link rel="stylesheet" href="styles/main.css"> <!--for the whole site-->
     <link id="theme" rel="stylesheet" href="styles/light.css"> <!--theme -- light by default-->
-    <script id="toggle" type="text/javascript" src="/scripts/themeToggle.js"></script>
+    <script id="toggle" type="text/javascript" src="scripts/themeToggle.js"></script>
     <script type="text/javascript" src="scripts/mobileDropup.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
@@ -36,7 +36,7 @@
     <nav class="navbar icon-bar navbar-fixed-bottom" id="mobile">
         <a href="index.html"><i class="fa fa-home"></i></a>
         <a href="illust.html"><i class="fa fa-paint-brush"></i></a>
-        <a href="resume.html"><i class="fa fa-file-text"></i></a>
+        <a style="border-right:none;" href="resume.html"><i class="fa fa-file-text"></i></a>
         <a class="active" href="#"><i class="fa fa-envelope"></i></a>
     </nav>
     <nav class="navbar" id="desktop">
@@ -86,7 +86,7 @@
         <label for="message"></label>
         <textarea id="message" name="message" placeholder="Write your message here..." required></textarea><br>
 
-        <input type="submit" href="mailto:kolleen1005@gmail.com" value="Send">
+        <input type="submit" formaction="mailto:kolleen1005@gmail.com" value="Send">
     </form>
 
 </main>

@@ -28,7 +28,7 @@ header h1 {color: greenyellow;}
 .navbar .nav-item {
     background: linear-gradient(180deg, #405f6f, darkslategray);
     border:2px solid #364556;
-    border-bottom:2px solid greenyellow;
+    border-bottom:2px solid lawngreen;
 }
 
 #logo {width: 39px;}
@@ -53,13 +53,13 @@ header h1 {color: greenyellow;}
 .icon-bar a, #dropup {
     color:#aee19d;
     border-left: 1px #5171a5 solid;
-    border-top:2px #dcff62 solid;}
+    border-top:2px lawngreen solid;}
 
 .icon-bar a.active {
     color:honeydew;
-    background: linear-gradient(180deg, #04AA60, seagreen);
-    border-left:1px forestgreen solid !important;
-    border-right:1px forestgreen solid!important;
+    background: linear-gradient(180deg, #8dc47c, #73ad6d, seagreen); /*#04AA60, seagreen*/
+    border-left:1px #04AA60 solid;
+    border-right:1px #04AA60 solid;
     border-top:2px #eafacb solid !important;
 }
 .dropup-content {background-color: darkslategray !important;}
@@ -133,9 +133,7 @@ input[type="submit"] {
 }
 
 /*for the section*/
-section, form, #gallery, #wip {
-    border: 1px solid #dcff62;
-}
+section, form, #gallery, #wip {border: 1px solid #dcff62;}
 
 section, #wip {background-color: #232c36;}
 #gallery, form {background-color: #364556;}

@@ -11,7 +11,7 @@
     <link id="favicon" class="logo" rel="icon" href="img/lotus.png"> <!-- lotus by default-->
     <link rel="stylesheet" href="styles/main.css"> <!--for the whole site-->
     <link id="theme" rel="stylesheet" href="styles/light.css"> <!--theme -- light by default-->
-    <script id="toggle" type="text/javascript" src="scripts/themeToggle.js"></script>
+    <script id="toggle" type="text/javascript" src="scripts/themeToggle.js">checkCookie();</script>
     <script type="text/javascript" src="scripts/mobileDropup.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
@@ -35,7 +35,7 @@
 
     <nav class="navbar icon-bar navbar-fixed-bottom" id="mobile"><!--considering remaking this as literally the same as the desktop one except it drops up-->
         <a class="active" href="#"><i class="fa fa-home"></i></a>
-        <a href="illust.html"><i class="fa fa-paint-brush dropup-icon"></i></a><!--for the sake of time, convenience, and sanity, we'll just have this one link to the illustrations page for now. the other two work sample pages are literally just generic 'coming soon' placeholders anyway-->
+        <a style="border-left:none;" href="illust.html"><i class="fa fa-paint-brush"></i></a><!--for the sake of time, convenience, and sanity, we'll just have this one link to the illustrations page for now. the other two work sample pages are literally just generic 'coming soon' placeholders anyway-->
 
         <!--<button id="dropup" onfocus="dropUp()"><i class="fa fa-star"></i></button>
         <div id="dropup-menu" class="dropup-content">
@@ -46,7 +46,6 @@
         <a href="resume.html"><i class="fa fa-file-text"></i></a>
         <a href="contact.html"><i class="fa fa-envelope"></i></a>
     </nav>
-
 
     <nav class="navbar" id="desktop">
         <div class="container-fluid">

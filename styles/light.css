@@ -55,15 +55,15 @@ header h1 {color: lightcoral;}
 /*for the mobile navbar specifically*/
 .icon-bar {background: linear-gradient(180deg, floralwhite, mistyrose);}
 .icon-bar a, #dropup {
-    color:indianred;
+    color:#da4167;
     border-left: 1px solid lightpink;
-    border-top:2px indianred solid;}
+    border-top:2px deeppink solid;}
 
 .icon-bar a.active {
-    color: cornflowerblue;
+    color: #72cbce;
     background:linear-gradient(180deg,#ebfef9, #d7fef2);
-    border-left:1px solid #7fd8be !important;
-    border-right:1px solid #7fd8be !important;
+    border-left:1px solid #7fd8be;
+    border-right:1px solid #7fd8be;
     border-top:2px cornflowerblue solid !important;
 }
 .dropup-content {background-color: #d7fef2 !important;}
@@ -128,7 +128,7 @@ input[type="text"], textarea {
     background-color:white;
     border:1px crimson solid;
 }
-input[type="text"]:focus, input[type="text"]:active, textarea:focus, textarea:active { border:1px #6beaea solid;}
+input[type="text"]:focus, input[type="text"]:active, textarea:focus, textarea:active {border:1px #6beaea solid;}
 input[type="submit"] {
     color: crimson;
     background-color:white;

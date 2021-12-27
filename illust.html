@@ -35,19 +35,19 @@
 
     <nav class="navbar icon-bar navbar-fixed-bottom" id="mobile">
         <a href="index.html"><i class="fa fa-home"></i></a>
-        <a href="illust.html"><i class="fa fa-paint-brush"></i></a>
-        <a href="resume.html"><i class="fa fa-file-text"></i></a>
+        <a class="active" href="illust.html"><i class="fa fa-paint-brush"></i></a>
+        <a style="border-left:none;" href="resume.html"><i class="fa fa-file-text"></i></a>
         <a href="contact.html"><i class="fa fa-envelope"></i></a>
     </nav>
     <nav class="navbar" id="desktop">
         <div class="container-fluid">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <img src="img/lotus.png" alt="Logo" type="img/png" style="max-width: 40px;" id="logo">
+                    <img src="img/lotus.png" alt="Logo" style="max-width: 40px;" id="logo">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown" id="current">
-                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Works</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Works</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Illustrations</a></li>
                         <li><a class="dropdown-item" href="#">Programming</a></li>
@@ -71,6 +71,7 @@
 
     <!-- Cards -->
     <div id="gallery">
+
         <!-- template <div class="card">
             <img class="card-img-top" src="" alt="image">
             <div class="card-body">
@@ -78,6 +79,25 @@
                 <p class="card-text">Description</p>
             </div>
         </div>-->
+
+        <div class="card-row double" style="border-top: none; margin-top:0; padding-top:0;">
+            <!-- walkcycle --> <div class="card">
+                <img class="card-img-top" src="img/gallery/walkcycle.gif" alt="image">
+                <div class="card-body">
+                    <h3 class="card-title">walkcycle</h3>
+                    <p class="card-text">First animation test done in Krita. Only the hair is colored in because I drew it on a separate layer from the rest of the animation.</p>
+                </div>
+            </div>
+
+            <!-- rat --> <div class="card">
+                <img class="card-img-top" src="img/gallery/return of rat.gif" alt="image">
+                <div class="card-body">
+                    <h3 class="card-title">return of rat</h3>
+                    <p class="card-text">Second animation test done in Krita. I really wanted to do something with a little rat fella like this guy and I'm glad I committed to it.</p>
+                </div>
+            </div>
+        </div>
+
 
         <!-- distant--> <div class="card wide">
             <img class="card-img-top" src="img/gallery/distant.png" alt="image">
