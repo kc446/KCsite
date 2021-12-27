@@ -1,6 +1,38 @@
 /* DEVELOPER: Kolleen Caffyn, IS 117-001, Fall 2021 */
 
-// light/dark mode toggle script, a.k.a. eternal suffering
+// light/dark mode toggle script,
+
+//initializing variables for the sake of keeping things relatively neat
+/*const light= 'styles/light.css';
+const dark = 'styles/dark.css';
+
+let lotus = 'img/lotus.png';
+let glowshroom = 'img/glowshroom.png';
+
+var theme = document.getElementById('theme');
+var icon = document.getElementById('favicon');
+var logo = document.getElementById('logo');
+
+
+//setting up themes as a bundled objects
+
+let style={
+    theme: document.getElementById('theme');
+    icon: document.getElementById('favicon');
+    logo: document.getElementById('logo');
+}
+
+style.light = {
+    theme: 'light';
+    icon: 'lotus';
+    logo: 'lotus';
+}
+
+style.dark = {
+    theme: 'dark';
+    icon: 'glowshroom';
+    logo: 'glowshroom';
+}*/
 
 // initializing cookie
 /*let themeC = {
