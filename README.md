@@ -1,2 +1,2 @@
-# KCproject
- IS 117 final project / web portfolio
+# KCsite
+ my web portfolio, and this time, it's PEROSNAL
