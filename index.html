@@ -32,6 +32,7 @@
         <input type="checkbox" onclick="toggleTheme()" id="status">
         <span class="slider"></span>
     </label>
+    <!--to do: get this shit working and STAY that way-->
 
     <nav class="navbar icon-bar navbar-fixed-bottom" id="mobile"><!--considering remaking this as literally the same as the desktop one except it drops up-->
         <a class="active" href="#"><i class="fa fa-home"></i></a>
@@ -46,31 +47,26 @@
         <a href="resume.html"><i class="fa fa-file-text"></i></a>
         <a href="contact.html"><i class="fa fa-envelope"></i></a>
     </nav>
+    <!--to do: fix the dropup for the future-->
 
     <nav class="navbar" id="desktop">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item" id="current">
-                    <img src="img/lotus.png" alt="Logo" style="max-width: 40px;" id="logo">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Works</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="illust.html">Illustrations</a></li>
-                        <li><a class="dropdown-item" href="#">Programming</a></li>
-                        <li><a class="dropdown-item" href="music.html">Music</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="resume.html">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+        <div class="container-fluid"><ul class="navbar-nav">
+            <li class="nav-item" id="current">
+                <img src="img/lotus.png" alt="Logo" style="max-width: 40px;" id="logo">
+                <a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Works</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="illust.html">Illustrations</a></li>
+                    <li><a class="dropdown-item" href="#">Programming</a></li>
+                    <li><a class="dropdown-item" href="music.html">Music</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul></div>
     </nav>
+    <!--to do:  add distant to the programming page as soon as we have a full working demo ready-->
 </header>
 
 <main>
