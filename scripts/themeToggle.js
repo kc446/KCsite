@@ -1,4 +1,4 @@
-/* DEVELOPER: Kolleen Caffyn, IS 117-001, Fall 2021 */
+/* DEVELOPER: Kolleen Caffyn */
 
 // light/dark mode toggle script,
 

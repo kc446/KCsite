@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- DEVELOPER: Kolleen Caffyn, IS 117-001, Fall 2021 -->
+<!-- DEVELOPER: Kolleen Caffyn -->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link id="favicon" class="logo" rel="icon" href="img/lotus.png"> <!-- lotus by default-->
     <link rel="stylesheet" href="styles/main.css"> <!--for the whole site-->
     <link id="theme" rel="stylesheet" href="styles/light.css"> <!--theme -- light by default-->
-    <script id="toggle" type="text/javascript" src="scripts/themeToggle.js"></script>
-    <script type="text/javascript" src="scripts/mobileDropup.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-        $(document).ready(function() {
-            $('#desktop').element({prependTo:'#mobile'});
-        });
-    </script>
 
     <title>Kolleen Caffyn.</title>
 </head>
@@ -35,12 +26,7 @@
 
     <nav class="navbar icon-bar navbar-fixed-bottom" id="mobile">
         <a href="index.html"><i class="fa fa-home"></i></a>
-        <button id="dropup" onfocus="dropUp()"><i class="fa fa-star"></i></button>
-        <div id="dropup-menu" class="dropup-content">
-            <a href="illust.html">Illustrations<i class="fa fa-paint-brush dropup-icon"></i></a>
-            <a href="programming.html">Programming<i class="fa fa-terminal dropup-icon"></i></a>
-            <a href="music.html">Music<i class="fa fa-music dropup-icon"></i></a>
-        </div>
+        <a href="illust.html"><i class="fa fa-paint-brush"></i></a>
         <a class="active"  href="#"><i class="fa fa-file-text"></i></a>
         <a style="border-left:none;" href="contact.html"><i class="fa fa-envelope"></i></a>
     </nav>
@@ -194,6 +180,16 @@
 </body>
 
 <footer>
-    &copy; Kolleen Caffyn, 2021 || Privacy Statement || Terms of Use
+    &copy; Kolleen Caffyn || Privacy Statement || Terms of Use
 </footer>
+<!--scripts go at the bottom to make things load faster-->
+<script id="toggle" type="text/javascript" src="scripts/themeToggle.js"></script>
+<script type="text/javascript" src="scripts/mobileDropup.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    $(document).ready(function() {
+        $('#desktop').element({prependTo:'#mobile'});
+    });
+</script>
 </html>

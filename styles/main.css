@@ -1,19 +1,19 @@
-/* DEVELOPER: Kolleen Caffyn, 2021 */
+/* DEVELOPER: Kolleen Caffyn */
 
 * {
     font-family: "Lato", "Arial", sans-serif;
     margin:0;
     padding:0;
 }
-
-link[href="../styles/dark.css"] {display:none !important;}
+link[href="../styles/light.css"] {display:block !important;}
+/*link[href="../styles/dark.css"] {display:none !important;}*/
 
 /*media queries*/
 @media only screen and (max-width:959px) { /*tablet view*/
 
-    header h1 {font-size:300%;}
+    h1, h2 {font-family: "Lato", sans-serif;}
 
-    h1,h2 {font-family: "Lato", sans-serif;}
+    header h1 {font-size:300%;}
 
     .navbar {
         overflow:hidden;
@@ -134,7 +134,7 @@ link[href="../styles/dark.css"] {display:none !important;}
     }
 
     .container-fluid {padding:0 !important;}
-    .switch {height:33% !important;;}
+    .switch {height:33% !important;}
 
     main {padding: 0 !important;}
     article {
@@ -212,6 +212,7 @@ header h1 {
     font-weight: 50;
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
+    border-bottom: 1px solid;
 }
 
 /*for the navbar*/
@@ -240,6 +241,12 @@ nav .navbar .nav {
     margin:auto;
 }
 
+.navbar .nav-item {
+    background: linear-gradient(180deg, white, lightgray);
+    border:1px solid;
+    border-bottom:2px solid;
+}
+
 .navbar-nav {
     margin:0;
     clear:left;
@@ -249,6 +256,7 @@ nav .navbar .nav {
     display:flex;
     flex-direction:row;
     width:100%;
+    border:1px solid;
 }
 .navbar-nav, .nav-item[id="current"]{border-bottom:none !important;}
 
@@ -274,6 +282,8 @@ nav.navbar ul li a{
     padding: 0.25em 0 0.25em 0;
     text-decoration:none;
 }
+
+.dropdown-menu {border:1px solid;}
 
 .navbar-nav .dropdown-menu {
     display: none;
@@ -309,6 +319,10 @@ nav.navbar ul li a{
     text-align:center;
 }
 
+#current {
+    border-bottom:2px solid !important;
+}
+
 /*for the mobile navbar, specifically*/
 
 .icon-bar {
@@ -326,10 +340,18 @@ nav.navbar ul li a{
     padding: 12px 0; /* Some top and bottom padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
     font-size:200%;
+    border-left: 1px solid;
+    border-top:2px solid;
 }
 
 .icon-bar a[href="index.html"] {border-left:none !important;}
 .icon-bar a[href="contact.html"] {border-right:none !important;}
+
+.icon-bar a.active{
+    border-left:1px solid;
+    border-right:1px solid;
+    border-top:2px solid;
+}
 
 .icon-bar i {font-size:36px;}
 .icon-bar i.fa-home {font-size:36px;}
@@ -341,7 +363,10 @@ nav.navbar ul li a{
     padding:0;
     cursor:pointer;
 }
-.show {display:block !important;}
+.show {
+    display:block !important;
+    border:1px solid;
+}
 
 .dropup-content {
     border:none !important;
@@ -357,6 +382,9 @@ nav.navbar ul li a{
     font-size:120%;
     font-weight:400;
     display:block;
+    border-top:none;
+    border-left:none;
+    border-bottom: 1px solid;
 }
 .dropup-icon {
     clear:both;
@@ -367,6 +395,7 @@ nav.navbar ul li a{
 body {
     margin: 1em auto;
     width:87.5%;
+    border:3px dotted;
 }
 main {
     padding-top: 1em;
@@ -378,6 +407,7 @@ a:visited, a:active, a:focus {color:transparent;}
 h1 {
     font-size:3.75em;
     font-family: "Magnolia Script", "Lato", sans-serif;
+    border-bottom:1px solid;
 }
 
 h2 {
@@ -385,6 +415,7 @@ h2 {
     margin-bottom: 0.25em;
     padding: 0.025em;
     font-size:2.5em;
+    border-bottom:1px solid;
 }
 
 h3 {
@@ -402,6 +433,7 @@ p {margin-bottom:0.5em;}
 #wip {
     text-align:center;
     padding:2.5em;
+    border:1px solid;
 }
 #wip h2{margin-bottom:1.25em;}
 #wip h3 {
@@ -416,7 +448,10 @@ p {margin-bottom:0.5em;}
     padding:2.5em;
 }
 
-.card {text-align:center;}
+.card {
+    text-align:center;
+    border:1px solid;
+}
 .card-img-top[alt] {text-align:center;}
 .card-title {text-align: center;}
 .wide .card-text {text-align: center;}
@@ -425,7 +460,9 @@ p {margin-bottom:0.5em;}
     width:inherit;
     margin:1.5em 0;
     padding:1.5em 0;
-    column-count:3;}
+    column-count:3;
+    border-top:1px solid;
+    border-bottom:1px solid;}
 .double {column-count:2;}
 
 .card-row .card {
@@ -444,9 +481,12 @@ p {margin-bottom:0.5em;}
 #featured {
     margin-left:5%;
     width:90%;
+    border:5px double;
 }
-
-.carousel-item::after, .carousel-item::before { /*animation kinda jumps the carousel up a pixel which is very noticeable since it has a border around it*/
+div .carousel {border-bottom: 1px solid;}
+.carousel-item::after, .carousel-item::before {
+    /*animation kinda jumps the carousel up a pixel
+    which is very noticeable since it has a border around it*/
 
 }
 
@@ -455,11 +495,13 @@ section {
     margin:1em 5%;
     display:inline-block;
     padding:1em;
+    border:1px solid;
 }
 section img {
     float:right;
     width:33.33%;
     max-width:75%;
+    border:7px double;
 }
 
 article {
@@ -470,7 +512,7 @@ article {
 }
 
 /*for the resume*/
-#resume em{
+#resume em {
     padding: 1.25em 0 0;
     margin:0 auto;
 }
@@ -488,6 +530,7 @@ form {
     margin:auto;
     padding:2.5em;
     text-align: center;
+    border:1px solid;
 }
 
 input, textarea {
@@ -495,12 +538,14 @@ input, textarea {
     margin-bottom:0.5em;
     border-radius:5px;
     padding:0.05em 0.25em;
+    border:1px solid;
 }
 
 input[type='submit']{
     padding:0.25em 0.5em;
+    border:1px solid;
 }
-
+input:focus, input:active, textarea:focus, textarea:active { border:1px solid;}
 #subject {width:60%;}
 
 #message {
@@ -562,7 +607,6 @@ footer {
 input:checked + .slider {background-color: lightgreen;}
 /*input:focus + .slider {box-shadow: 0 0 1px lightgreen;}*/
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }

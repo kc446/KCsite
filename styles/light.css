@@ -1,4 +1,4 @@
-/* DEVELOPER: Kolleen Caffyn, 2021 */
+/* DEVELOPER: Kolleen Caffyn */
 
 html {background-color: floralwhite;}
 
@@ -25,27 +25,28 @@ other
 header h1 {color: lightcoral;}
 #subtitle {
     color: indianred;
-    border-bottom: 1px salmon solid;}
+    border-bottom-color: salmon;
+}
 
 /* for the navbar */
-.navbar-nav {border:1px solid lightcoral;}
+.navbar-nav {border-color: lightcoral;}
 .navbar .nav-item {
     background: linear-gradient(180deg, white, mistyrose);
-    border:1px solid #ffbfd1;
-    border-bottom:2px deeppink solid;
+    border-color: #ffbfd1;
+    border-bottom-color: deeppink;
 }
 
 #logo {width: 40px;}
 .nav-link {color: salmon;}
 .nav-link:hover, .nav-link:focus {color: #22b0d0;}
 
-#current {border-bottom: 2px #7fd8be solid !important;}
+#current {border-bottom-color: #7fd8be !important;}
 #current a {color: #da4167;}
 
 .dropdown-item {color:#22b0d0 !important;}
 .dropdown-menu {
     background-color: #ebfef9;
-    border: 1px #5171a5 solid;
+    border-color: #5171a5;
 }
 .dropdown-item:hover {
     color: #5171a5;
@@ -56,25 +57,25 @@ header h1 {color: lightcoral;}
 .icon-bar {background: linear-gradient(180deg, floralwhite, mistyrose);}
 .icon-bar a, #dropup {
     color:#da4167;
-    border-left: 1px solid lightpink;
-    border-top:2px deeppink solid;}
+    border-left-color: lightpink;
+    border-top-color: deeppink;
+}
 
 .icon-bar a.active {
     color: #72cbce;
     background:linear-gradient(180deg,#ebfef9, #d7fef2);
-    border-left:1px solid #7fd8be;
-    border-right:1px solid #7fd8be;
-    border-top:2px cornflowerblue solid !important;
+    border-left-color: #7fd8be;
+    border-right-color: #7fd8be;
+    border-top-color: cornflowerblue !important;
 }
+
 .dropup-content {background-color: #d7fef2 !important;}
 
-.show {border: 1px #7fd8be solid !important;}
+.show {border-color: #7fd8be !important;}
 
 .dropup-content a {
     color:#5171a5;
-    border-top:none;
-    border-left:none;
-    border-bottom:1px cornflowerblue solid;
+    border-bottom-color: cornflowerblue;
 }
 
 .dropup-icon {color: #7fd8be}
@@ -82,17 +83,17 @@ header h1 {color: lightcoral;}
 /* for the body/overall */
 body {
     background-color: mistyrose;
-    border: 3px dotted lightcoral;
+    border-color: lightcoral;
 }
 body p {color: indianred;}
 
 h1 {
     color: palevioletred;
-    border-bottom: 1px #fd93c0 solid;
+    border-bottom-color: #fd93c0;
 }
 h2 {
     color: salmon;
-    border-bottom:1px solid;
+    /*border-bottom-color: ;*/
 }
 h3 {color:crimson;}
 h4 {color:hotpink;}
@@ -100,16 +101,16 @@ h4 {color:hotpink;}
 em {color:palevioletred;}
 
 /*for the carousel*/
-#featured {border:5px crimson double;}
-div .carousel {border-bottom:1px salmon solid !important;}
+#featured {border-color:crimson;}
+div .carousel {border-bottom-color: salmon !important;}
 
 /*for the cards*/
 .card-row {
-    border-top: 1px deeppink solid;
-    border-bottom: 1px deeppink solid;
+    border-top-color: deeppink;
+    border-bottom-color: deeppink;
 }
 .card {
-    border:1px #6beaea solid;
+    border-color: #6beaea;
     background-color: #7fd8be;
 }
 .card-body {background-color: #ebfef9}
@@ -126,23 +127,23 @@ label {color: lightcoral;}
 input[type="text"], textarea {
     color: palevioletred;
     background-color:white;
-    border:1px crimson solid;
+    border-color:crimson;
 }
-input[type="text"]:focus, input[type="text"]:active, textarea:focus, textarea:active {border:1px #6beaea solid;}
+input:focus, input:active, textarea:focus, textarea:active {border-color:#6beaea !important;}
 input[type="submit"] {
     color: crimson;
-    background-color:white;
-    border:1px crimson solid;
+    background-color: white;
+    border-color: crimson;
 }
 
 /*for the section*/
 section,form,#gallery, #wip {
     background-color: floralwhite;
-    border:1px solid #fd93c0;
+    border-color: #fd93c0;
 }
 
 section img {
-    border:7px salmon double;
+    border-color: salmon;
     background-color:floralwhite;}
 
 /* for the footer */

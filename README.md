@@ -1,2 +1,2 @@
 # KCsite
- my web portfolio, and this time, it's PEROSNAL
+ my web portfolio, and this time, it's PERSONAL.

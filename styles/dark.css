@@ -1,4 +1,4 @@
-/* DEVELOPER: Kolleen Caffyn, Fall 2021 */
+/* DEVELOPER: Kolleen Caffyn */
 
 html {background-color: darkslategray;}
 
@@ -20,28 +20,28 @@ the mystery color that may or may not get used: #dcff62
 header h1 {color: greenyellow;}
 #subtitle {
     color: lightgreen;
-    border-bottom: 1px #aee19d solid;
+    border-bottom-color: #aee19d;
 }
 
 /* for the navbar */
-.navbar-nav {border:1px solid #364556;}
+.navbar-nav {border-color: #364556;}
 .navbar .nav-item {
     background: linear-gradient(180deg, #405f6f, darkslategray);
-    border:2px solid #364556;
-    border-bottom:2px solid lawngreen;
+    border-color: #364556;
+    border-bottom-color: lawngreen;
 }
 
 #logo {width: 39px;}
 .nav-link {color: #eafacb;}
 .nav-link:hover, .nav-link:focus {color: #aee19d;}
 
-#current {border-bottom: 2px solid #eafacb !important;}
+#current {border-bottom-color: #eafacb !important;}
 #current a {color: honeydew;}
 
 .dropdown-item {color:#aee19d}
 .dropdown-menu {
     background-color: darkslategray;
-    border: 1px solid greenyellow;
+    border-color: greenyellow;
 }
 .dropdown-item:hover {
     color: #dcff62;
@@ -52,24 +52,22 @@ header h1 {color: greenyellow;}
 .icon-bar {background: linear-gradient(180deg, #405f6f, #364556);}
 .icon-bar a, #dropup {
     color:#aee19d;
-    border-left: 1px #5171a5 solid;
-    border-top:2px lawngreen solid;}
+    border-left-color: #5171a5;
+    border-top-color: lawngreen;}
 
 .icon-bar a.active {
     color:honeydew;
     background: linear-gradient(180deg, #8dc47c, #73ad6d, seagreen); /*#04AA60, seagreen*/
-    border-left:1px #04AA60 solid;
-    border-right:1px #04AA60 solid;
-    border-top:2px #eafacb solid !important;
+    border-left-color: #04AA60;
+    border-right-color: #04AA60;
+    border-top-color: #eafacb !important;
 }
 .dropup-content {background-color: darkslategray !important;}
 
-.show {border: 1px greenyellow solid !important;}
+.show {border-color: greenyellow !important;}
 .dropup-content a {
     color:honeydew;
-    border-top:none;
-    border-left:none;
-    border-bottom:1px #aee19d solid;
+    border-bottom-color: #aee19d;
 }
 
 .dropup-icon {color: #dcff62}
@@ -77,7 +75,7 @@ header h1 {color: greenyellow;}
 /* for the body/overall */
 body {
     background-color: #405f6f;
-    border: 3px dotted lawngreen;
+    border-color: lawngreen;
 }
 body p {color: honeydew;}
 
@@ -85,11 +83,11 @@ a:after {color: honeydew;}
 
 h1 {
     color: greenyellow;
-    border-bottom: 1px honeydew solid;
+    border-bottom-color: honeydew;
 }
 h2 {
     color: #dcff62;
-    border-bottom: 1px #aee19d solid;
+    border-bottom-color: #aee19d;
 }
 h3 {color:#aee19d;}
 h4 {color: #dcff62;}
@@ -97,15 +95,16 @@ h4 {color: #dcff62;}
 em {color:#eafacb;}
 
 /*for the carousel*/
-#featured {border:5px #dcff62 double;}
+#featured {border-color: #dcff62;}
+div .carousel {border-bottom-color: #aee19d !important;}
 
 /*for the cards*/
 .card-row {
-    border-top: 1px #dcff62 solid;
-    border-bottom: 1px #dcff62 solid;
+    border-top-color: #dcff62;
+    border-bottom-color: #dcff62;
 }
 .card {
-    border:1px lawngreen solid;
+    border-color: lawngreen;
     background-color: #405f6f;
 }
 .card-body {background-color: #232c36}
@@ -122,25 +121,25 @@ label {color:#aee19d}
 input[type="text"], textarea {
     color: honeydew;
     background-color: #232c36;
-    border: 1px solid #aee19d;
+    border-color: #aee19d;
 }
-input:focus, input:active, textarea:focus, textarea:active { border:2px greenyellow solid;}
+input:focus, input:active, textarea:focus, textarea:active {border-color: greenyellow !important;}
 textarea[placeholder] {color: #eafacb;}
 input[type="submit"] {
     color: #eafacb;
     background-color: #364556;
-    border:1px solid #dcff62;
+    border-color: #dcff62;
 }
 
 /*for the section*/
-section, form, #gallery, #wip {border: 1px solid #dcff62;}
+section, form, #gallery, #wip {border-color: #dcff62;}
 
 section, #wip {background-color: #232c36;}
 #gallery, form {background-color: #364556;}
 article {color: forestgreen;}
 
 section img {
-    border:7px limegreen double;
+    border-color: limegreen;
     background-color: #dcff62;
 }
 
